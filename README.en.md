@@ -14,13 +14,17 @@
 A BP panel for a five-stack team to use in the 5 minutes before a match: fill in the five players' hero pools once, and from then on every game runs
 **pre-select lineup → 10 bans → 1-2-2-2-2-1 picks → post-match team review**, ending with a BP text you can review afterwards.
 
-| Ban phase (one instruction + fallbacks per player) | Pre-match pre-select lineup (34 combos) |
+| Ban phase (one instruction + fallbacks per player) | Pick phase (phased suggestions + who plays it) |
 |---|---|
-| ![Ban phase](docs/screenshots/01-ban.png) | ![Pre-select lineup](docs/screenshots/04-preset.png) |
+| ![Ban phase](docs/screenshots/01-ban.png) | ![Pick phase](docs/screenshots/02-pick.png) |
 
-| Post-match team review | Hero-pool checkup & pool-fill advice |
+| Pre-match pre-select lineup (34 combos) | Post-match team review |
 |---|---|
-| ![Team review](docs/screenshots/05-review.png) | ![Pool-fill advice](docs/screenshots/06-advice.png) |
+| ![Pre-select lineup](docs/screenshots/04-preset.png) | ![Team review](docs/screenshots/05-review.png) |
+
+| Hero-pool checkup & pool-fill advice | Manually assigning who plays (one hero per player) |
+|---|---|
+| ![Pool-fill advice](docs/screenshots/06-advice.png) | ![Manual assignment](docs/screenshots/03-assign.png) |
 
 ---
 
@@ -214,8 +218,8 @@ node tools/validate-data.mjs  # data consistency (0 errors)
 node tools/e2e.mjs            # browser E2E: 79 cases (headless Chrome, screenshots in .e2e/)
 ```
 
-- The first three have zero dependencies and need no external services, so they run right after `clone` (when the real save file is missing they fall back to `data/store.sample.json`).
-- `e2e.mjs` needs a local Chrome/Edge (point to it with `CHROME_PATH`) and **Node ≥ 22** (it drives CDP directly through the native `WebSocket`, no puppeteer); it starts a temporary server and restores `data/store.json` automatically when done.
+- The first three have zero dependencies and need no external services, so they run right after `clone` (when the real save file is missing they fall back to `data/store.sample.json`; smoke then reports 51 cases + 1 SKIP, which is expected).
+- `e2e.mjs` needs a local Chrome/Edge (point to it with `CHROME_PATH`) and **Node ≥ 22** (it drives CDP directly through the native `WebSocket`, no puppeteer); it starts a temporary server and restores `data/store.json` automatically when done (if no save file exists it seeds one from `store.sample.json` and removes it afterwards).
 - Suggested CI order: `validate-data` → `test-engine` → `smoke`.
 
 ## Data Updates & Extending

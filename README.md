@@ -14,13 +14,17 @@
 一套给五排车队赛前 5 分钟用的 BP 面板：填一次五人英雄池，之后每局按
 **预选阵容 → 10 ban → 1-2-2-2-2-1 pick → 赛后队伍总评** 走完，最后给一份可复盘的 BP 文本。
 
-| Ban 阶段（每人一条指令 + 备选） | 赛前预选阵容（34 套组合） |
+| Ban 阶段（每人一条指令 + 备选） | Pick 阶段（分阶段推荐 + 谁打） |
 |---|---|
-| ![Ban 阶段](docs/screenshots/01-ban.png) | ![预选阵容](docs/screenshots/04-preset.png) |
+| ![Ban 阶段](docs/screenshots/01-ban.png) | ![Pick 阶段](docs/screenshots/02-pick.png) |
 
-| 赛后队伍总体评价 | 英雄池体检 & 补池建议 |
+| 赛前预选阵容（34 套组合） | 赛后队伍总体评价 |
 |---|---|
-| ![队伍总评](docs/screenshots/05-review.png) | ![补池建议](docs/screenshots/06-advice.png) |
+| ![预选阵容](docs/screenshots/04-preset.png) | ![队伍总评](docs/screenshots/05-review.png) |
+
+| 英雄池体检 & 补池建议 | 手动指定谁打（一人一英雄） |
+|---|---|
+| ![补池建议](docs/screenshots/06-advice.png) | ![手动指定](docs/screenshots/03-assign.png) |
 
 ---
 
@@ -214,8 +218,8 @@ node tools/validate-data.mjs  # 数据一致性（0 error）
 node tools/e2e.mjs            # 浏览器端 E2E：79 项（无头 Chrome，截图落 .e2e/）
 ```
 
-- 前三个零依赖、无外部服务，`clone` 后直接可跑（真实存档缺失时自动回退 `data/store.sample.json`）。
-- `e2e.mjs` 需要本机 Chrome/Edge（可用 `CHROME_PATH` 指定）和 **Node ≥ 22**（用原生 `WebSocket` 直连 CDP，不装 puppeteer）；它会临时起服务、跑完自动还原 `data/store.json`。
+- 前三个零依赖、无外部服务，`clone` 后直接可跑（真实存档缺失时自动回退 `data/store.sample.json`；此时 smoke 为 51 项 + 1 SKIP，属正常）。
+- `e2e.mjs` 需要本机 Chrome/Edge（可用 `CHROME_PATH` 指定）和 **Node ≥ 22**（用原生 `WebSocket` 直连 CDP，不装 puppeteer）；它会临时起服务、跑完自动还原 `data/store.json`（没有存档时先用 `store.sample.json` 播种，跑完删除）。
 - CI 建议顺序：`validate-data` → `test-engine` → `smoke`。
 
 ## 数据更新与二次开发
