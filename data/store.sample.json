@@ -1,0 +1,223 @@
+{
+  "version": 2,
+  "side": "blue",
+  "players": [
+    {
+      "id": "p1",
+      "name": "玩家1",
+      "floor": 1,
+      "preferLanes": [
+        "top"
+      ],
+      "pool": [
+        {
+          "hero": "赵云",
+          "mastery": "best"
+        },
+        {
+          "hero": "元歌",
+          "mastery": "best"
+        },
+        {
+          "hero": "嫦娥",
+          "mastery": "normal"
+        },
+        {
+          "hero": "苏烈",
+          "mastery": "normal"
+        },
+        {
+          "hero": "司空震",
+          "mastery": "normal"
+        },
+        {
+          "hero": "狂铁",
+          "mastery": "normal"
+        },
+        {
+          "hero": "李信",
+          "mastery": "basic"
+        },
+        {
+          "hero": "哪吒",
+          "mastery": "basic"
+        },
+        {
+          "hero": "敖隐",
+          "mastery": "normal"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "玩家2",
+      "floor": 2,
+      "preferLanes": [
+        "jungle"
+      ],
+      "pool": [
+        {
+          "hero": "阿古朵",
+          "mastery": "best"
+        },
+        {
+          "hero": "诸葛亮",
+          "mastery": "best"
+        },
+        {
+          "hero": "蚩奼",
+          "mastery": "normal"
+        },
+        {
+          "hero": "杨玉环",
+          "mastery": "normal"
+        },
+        {
+          "hero": "曹操",
+          "mastery": "normal"
+        },
+        {
+          "hero": "孙悟空",
+          "mastery": "normal"
+        },
+        {
+          "hero": "王维",
+          "mastery": "basic"
+        },
+        {
+          "hero": "苍",
+          "mastery": "basic"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "玩家3",
+      "floor": 3,
+      "preferLanes": [
+        "mid"
+      ],
+      "pool": [
+        {
+          "hero": "沈梦溪",
+          "mastery": "best"
+        },
+        {
+          "hero": "女娲",
+          "mastery": "best"
+        },
+        {
+          "hero": "小乔",
+          "mastery": "normal"
+        },
+        {
+          "hero": "不知火舞",
+          "mastery": "normal"
+        },
+        {
+          "hero": "武则天",
+          "mastery": "normal"
+        },
+        {
+          "hero": "太乙真人",
+          "mastery": "normal"
+        },
+        {
+          "hero": "西施",
+          "mastery": "basic"
+        },
+        {
+          "hero": "海诺",
+          "mastery": "basic"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "玩家4",
+      "floor": 4,
+      "preferLanes": [
+        "adc"
+      ],
+      "pool": [
+        {
+          "hero": "鲁班七号",
+          "mastery": "best"
+        },
+        {
+          "hero": "敖隐",
+          "mastery": "best"
+        },
+        {
+          "hero": "后羿",
+          "mastery": "normal"
+        },
+        {
+          "hero": "元流之子(射手)",
+          "mastery": "normal"
+        },
+        {
+          "hero": "戈娅",
+          "mastery": "normal"
+        },
+        {
+          "hero": "公孙离",
+          "mastery": "normal"
+        },
+        {
+          "hero": "百里守约",
+          "mastery": "basic"
+        },
+        {
+          "hero": "莱西奥",
+          "mastery": "basic"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "玩家5",
+      "floor": 5,
+      "preferLanes": [
+        "support"
+      ],
+      "pool": [
+        {
+          "hero": "盾山",
+          "mastery": "best"
+        },
+        {
+          "hero": "张飞",
+          "mastery": "best"
+        },
+        {
+          "hero": "刘邦",
+          "mastery": "normal"
+        },
+        {
+          "hero": "夏侯惇",
+          "mastery": "normal"
+        },
+        {
+          "hero": "空空儿",
+          "mastery": "normal"
+        },
+        {
+          "hero": "瑶",
+          "mastery": "normal"
+        },
+        {
+          "hero": "项羽",
+          "mastery": "basic"
+        },
+        {
+          "hero": "墨子",
+          "mastery": "basic"
+        }
+      ]
+    }
+  ],
+  "allowCrossLane": true,
+  "weights": {},
+  "history": []
+}

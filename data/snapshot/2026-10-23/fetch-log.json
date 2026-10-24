@@ -1,0 +1,16 @@
+{
+ "requests": 277,
+ "retries": 3,
+ "errors": [
+  {
+   "url": "/api/herostats?date=2026-10-24&gameMode=1",
+   "error": "Error: HTTP 400"
+  }
+ ],
+ "startedAt": "2026-10-24T06:00:40.522Z",
+ "finishedAt": "2026-10-24T06:03:35.295Z",
+ "date": "2026-10-23",
+ "heroCount": 133,
+ "analysisCount": 133,
+ "bpCount": 133
+}

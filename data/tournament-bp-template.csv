@@ -1,0 +1,2 @@
+match_id,date,event,stage,blue_team,red_team,blue_bans,red_bans,blue_picks,red_picks,winner,duration_min,note
+EXAMPLE-DELETE,2026-10-27,2026KPL年度总决赛,淘汰赛,队伍A,队伍B,例:庄周|例:盾山|例:后羿|例:镜|例:大乔,例:马超|例:关羽|例:明世隐|例:钟馗|例:沈梦溪,例:百里守约|例:墨子|例:沈梦溪|例:李信|例:澜,例:公孙离|例:大乔|例:不知火舞|例:镜|例:廉颇,队伍A,18,这一行是格式示例，填写时请整行删除

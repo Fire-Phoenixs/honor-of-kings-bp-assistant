@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>王者荣耀 BP 平台 v2.3</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">BP</span>
+    <div class="brand-text">
+      <h1>王者荣耀 BP 平台</h1>
+      <p class="sub">天元之弈数据 · 五排实战 · 只用鼠标</p>
+    </div>
+  </div>
+  <div class="status">
+    <span id="dataVersion" class="pill pill-dim">数据版本 —</span>
+    <span id="connState" class="pill pill-dim">连接中…</span>
+  </div>
+</header>
+
+<nav id="tabs" class="tabs" aria-label="主导航"></nav>
+
+<main id="view" class="view" aria-live="polite"></main>
+
+<div id="modalRoot"></div>
+<div id="toast" class="toast" hidden></div>
+
+<script src="/data/heroes.js"></script>
+<script src="/heroicons.js"></script>
+<script src="/engine.js"></script>
+<script src="/ai.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
+
+

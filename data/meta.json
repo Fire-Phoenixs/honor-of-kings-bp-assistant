@@ -1,0 +1,1955 @@
+{
+ "version": "2026-10-23",
+ "source": "天元之弈 https://tianyuanzhiyi.com",
+ "tagSource": "draft",
+ "tiers": {
+  "马超": {
+   "tier": "T0",
+   "score": 78.74,
+   "role": "打野/对抗路",
+   "winRate": 44.16,
+   "pickRate": 6.1,
+   "banRate": 1.44,
+   "winRateDelta": -0.55
+  },
+  "大乔": {
+   "tier": "T0",
+   "score": 75.05,
+   "role": "中路/游走",
+   "winRate": 48.14,
+   "pickRate": 8.5,
+   "banRate": 28.67,
+   "winRateDelta": -0.03
+  },
+  "阿古朵": {
+   "tier": "T1",
+   "score": 59.22,
+   "role": "打野/发育路(次分路)",
+   "winRate": 53.59,
+   "pickRate": 3,
+   "banRate": 0.82,
+   "winRateDelta": 0.07
+  },
+  "司空震": {
+   "tier": "T1",
+   "score": 58.93,
+   "role": "对抗路/发育路(次分路)",
+   "winRate": 46.99,
+   "pickRate": 7.5,
+   "banRate": 2.21,
+   "winRateDelta": -0.3
+  },
+  "诸葛亮": {
+   "tier": "T1",
+   "score": 58.22,
+   "role": "中路/打野(次分路)",
+   "winRate": 47.68,
+   "pickRate": 9,
+   "banRate": 3.15,
+   "winRateDelta": 0.09
+  },
+  "哪吒": {
+   "tier": "T1",
+   "score": 58.14,
+   "role": "对抗路/打野(次分路)",
+   "winRate": 53.04,
+   "pickRate": 7,
+   "banRate": 7.79,
+   "winRateDelta": -0.09
+  },
+  "蚩奼": {
+   "tier": "T1",
+   "score": 57.02,
+   "role": "发育路/对抗路",
+   "winRate": 48.11,
+   "pickRate": 6.1,
+   "banRate": 0.6,
+   "winRateDelta": 0
+  },
+  "杨玉环": {
+   "tier": "T1",
+   "score": 56.31,
+   "role": "中路/游走(次分路)",
+   "winRate": 48.3,
+   "pickRate": 2.6,
+   "banRate": 0.23,
+   "winRateDelta": -0.29
+  },
+  "杨戬": {
+   "tier": "T1",
+   "score": 52.86,
+   "role": "打野/对抗路",
+   "winRate": 51.31,
+   "pickRate": 3.8,
+   "banRate": 0.37,
+   "winRateDelta": -0.11
+  },
+  "夏侯惇": {
+   "tier": "T1",
+   "score": 52.86,
+   "role": "对抗路/游走(次分路)/打野(次分路)",
+   "winRate": 54.21,
+   "pickRate": 15.6,
+   "banRate": 6.61,
+   "winRateDelta": 0.21
+  },
+  "项羽": {
+   "tier": "T1",
+   "score": 49.71,
+   "role": "对抗路/游走(次分路)",
+   "winRate": 49.9,
+   "pickRate": 13.9,
+   "banRate": 2.98,
+   "winRateDelta": 0.06
+  },
+  "赵怀真": {
+   "tier": "T2",
+   "score": 35.34,
+   "role": "游走/对抗路(次分路)",
+   "winRate": 47.5,
+   "pickRate": 1.9,
+   "banRate": 0.3,
+   "winRateDelta": -0.44
+  },
+  "猪八戒": {
+   "tier": "T2",
+   "score": 35.32,
+   "role": "对抗路/打野",
+   "winRate": 48.76,
+   "pickRate": 7.7,
+   "banRate": 3.52,
+   "winRateDelta": 0.15
+  },
+  "元流之子(坦克)": {
+   "tier": "T2",
+   "score": 34.4,
+   "role": "游走/对抗路/打野(次分路)",
+   "winRate": 48,
+   "pickRate": 3.1,
+   "banRate": 1.02,
+   "winRateDelta": 0.06
+  },
+  "李元芳": {
+   "tier": "T2",
+   "score": 33.63,
+   "role": "打野/发育路",
+   "winRate": 51.93,
+   "pickRate": 14.7,
+   "banRate": 2.69,
+   "winRateDelta": 0.08
+  },
+  "心魔六耳": {
+   "tier": "T2",
+   "score": 33.15,
+   "role": "打野/对抗路",
+   "winRate": 51.35,
+   "pickRate": 17.2,
+   "banRate": 18.18,
+   "winRateDelta": 0.04
+  },
+  "梦奇": {
+   "tier": "T2",
+   "score": 32.8,
+   "role": "对抗路/打野",
+   "winRate": 50.26,
+   "pickRate": 0.5,
+   "banRate": 0.23,
+   "winRateDelta": 0.04
+  },
+  "干将莫邪": {
+   "tier": "T3",
+   "score": 26.82,
+   "role": "中路/发育路(次分路)",
+   "winRate": 51.54,
+   "pickRate": 5.9,
+   "banRate": 2.36,
+   "winRateDelta": -0.02
+  },
+  "张良": {
+   "tier": "T3",
+   "score": 26.14,
+   "role": "游走/中路",
+   "winRate": 51.55,
+   "pickRate": 6.4,
+   "banRate": 35.89,
+   "winRateDelta": 0.22
+  },
+  "盘古": {
+   "tier": "T3",
+   "score": 24.12,
+   "role": "打野/对抗路",
+   "winRate": 47.89,
+   "pickRate": 3,
+   "banRate": 6.04,
+   "winRateDelta": 0.25
+  },
+  "东皇太一": {
+   "tier": "T3",
+   "score": 20.53,
+   "role": "游走/对抗路(次分路)",
+   "winRate": 49.03,
+   "pickRate": 8.1,
+   "banRate": 35.05,
+   "winRateDelta": 0.11
+  },
+  "兰陵王": {
+   "tier": "T3",
+   "score": 19.18,
+   "role": "打野/对抗路",
+   "winRate": 48.51,
+   "pickRate": 4.6,
+   "banRate": 6.68,
+   "winRateDelta": 0.02
+  },
+  "金蝉": {
+   "tier": "T4",
+   "score": 5.04,
+   "role": "中路/游走(次分路)",
+   "winRate": 49.35,
+   "pickRate": 8,
+   "banRate": 38.77,
+   "winRateDelta": 0.34
+  },
+  "姜子牙": {
+   "tier": "T4",
+   "score": 2.35,
+   "role": "中路/游走(次分路)",
+   "winRate": 50.64,
+   "pickRate": 12,
+   "banRate": 8.22,
+   "winRateDelta": 0.03
+  },
+  "关羽": {
+   "tier": "T0",
+   "score": 85.36,
+   "role": "对抗路",
+   "winRate": 46.77,
+   "pickRate": 4.8,
+   "banRate": 4.48,
+   "winRateDelta": -0.34
+  },
+  "元歌": {
+   "tier": "T0.5",
+   "score": 61.42,
+   "role": "对抗路",
+   "winRate": 48.49,
+   "pickRate": 2.2,
+   "banRate": 0.35,
+   "winRateDelta": -0.79
+  },
+  "狂铁": {
+   "tier": "T1",
+   "score": 58.54,
+   "role": "对抗路",
+   "winRate": 46.53,
+   "pickRate": 3.7,
+   "banRate": 0.58,
+   "winRateDelta": -0.01
+  },
+  "曹操": {
+   "tier": "T1",
+   "score": 56.08,
+   "role": "对抗路",
+   "winRate": 51.73,
+   "pickRate": 3.5,
+   "banRate": 0.24,
+   "winRateDelta": 0.08
+  },
+  "夏洛特": {
+   "tier": "T1",
+   "score": 55.29,
+   "role": "对抗路",
+   "winRate": 46.84,
+   "pickRate": 2.9,
+   "banRate": 0.18,
+   "winRateDelta": 0.17
+  },
+  "影": {
+   "tier": "T1",
+   "score": 54.99,
+   "role": "对抗路",
+   "winRate": 51.87,
+   "pickRate": 6.2,
+   "banRate": 1.05,
+   "winRateDelta": -0.16
+  },
+  "蒙恬": {
+   "tier": "T1",
+   "score": 53.37,
+   "role": "对抗路",
+   "winRate": 43.42,
+   "pickRate": 1,
+   "banRate": 0.97,
+   "winRateDelta": -0.95
+  },
+  "花木兰": {
+   "tier": "T1",
+   "score": 52.36,
+   "role": "对抗路",
+   "winRate": 46.33,
+   "pickRate": 2.9,
+   "banRate": 0.09,
+   "winRateDelta": -0.16
+  },
+  "姬小满": {
+   "tier": "T1",
+   "score": 51.96,
+   "role": "对抗路",
+   "winRate": 44.32,
+   "pickRate": 1.5,
+   "banRate": 0.21,
+   "winRateDelta": -0.33
+  },
+  "芈月": {
+   "tier": "T1",
+   "score": 50.61,
+   "role": "对抗路",
+   "winRate": 51.09,
+   "pickRate": 6.5,
+   "banRate": 14.58,
+   "winRateDelta": 0.15
+  },
+  "老夫子": {
+   "tier": "T2",
+   "score": 41.61,
+   "role": "对抗路",
+   "winRate": 46.87,
+   "pickRate": 1.7,
+   "banRate": 0.47,
+   "winRateDelta": 0.05
+  },
+  "亚瑟": {
+   "tier": "T2",
+   "score": 39.43,
+   "role": "对抗路",
+   "winRate": 49.29,
+   "pickRate": 10.5,
+   "banRate": 0.77,
+   "winRateDelta": 0.32
+  },
+  "达摩": {
+   "tier": "T2",
+   "score": 38.67,
+   "role": "对抗路",
+   "winRate": 47.4,
+   "pickRate": 3.3,
+   "banRate": 0.14,
+   "winRateDelta": -0.39
+  },
+  "孙策": {
+   "tier": "T2",
+   "score": 35.57,
+   "role": "对抗路",
+   "winRate": 46.86,
+   "pickRate": 7.6,
+   "banRate": 0.5,
+   "winRateDelta": 0.11
+  },
+  "钟无艳": {
+   "tier": "T2",
+   "score": 34.2,
+   "role": "对抗路",
+   "winRate": 52.06,
+   "pickRate": 4.1,
+   "banRate": 0.38,
+   "winRateDelta": 0.34
+  },
+  "白起": {
+   "tier": "T2",
+   "score": 33.72,
+   "role": "对抗路",
+   "winRate": 53.6,
+   "pickRate": 4.7,
+   "banRate": 0.7,
+   "winRateDelta": 0
+  },
+  "亚连": {
+   "tier": "T2",
+   "score": 31.59,
+   "role": "对抗路",
+   "winRate": 52.27,
+   "pickRate": 1.5,
+   "banRate": 0.25,
+   "winRateDelta": -0.24
+  },
+  "吕布": {
+   "tier": "T3",
+   "score": 27.27,
+   "role": "对抗路",
+   "winRate": 48.72,
+   "pickRate": 18.3,
+   "banRate": 7.53,
+   "winRateDelta": 0.03
+  },
+  "程咬金": {
+   "tier": "T4",
+   "score": 14.02,
+   "role": "对抗路",
+   "winRate": 50.33,
+   "pickRate": 5.6,
+   "banRate": 1.32,
+   "winRateDelta": 0.09
+  },
+  "镜": {
+   "tier": "T0",
+   "score": 85.29,
+   "role": "打野",
+   "winRate": 41.98,
+   "pickRate": 3,
+   "banRate": 0.81,
+   "winRateDelta": -0.61
+  },
+  "裴擒虎": {
+   "tier": "T0",
+   "score": 82.43,
+   "role": "打野",
+   "winRate": 44.37,
+   "pickRate": 2.7,
+   "banRate": 0.37,
+   "winRateDelta": -0.45
+  },
+  "赵云": {
+   "tier": "T0.5",
+   "score": 63.31,
+   "role": "打野",
+   "winRate": 54.13,
+   "pickRate": 16.3,
+   "banRate": 3.19,
+   "winRateDelta": 0.12
+  },
+  "孙悟空": {
+   "tier": "T1",
+   "score": 55.62,
+   "role": "打野",
+   "winRate": 47.81,
+   "pickRate": 16.5,
+   "banRate": 3.85,
+   "winRateDelta": 0.02
+  },
+  "韩信": {
+   "tier": "T1",
+   "score": 54.48,
+   "role": "打野",
+   "winRate": 47.86,
+   "pickRate": 5.2,
+   "banRate": 0.37,
+   "winRateDelta": -0.15
+  },
+  "百里玄策": {
+   "tier": "T1",
+   "score": 54.11,
+   "role": "打野",
+   "winRate": 47.91,
+   "pickRate": 2.9,
+   "banRate": 0.22,
+   "winRateDelta": -0.48
+  },
+  "露娜": {
+   "tier": "T1",
+   "score": 53.9,
+   "role": "打野",
+   "winRate": 43.54,
+   "pickRate": 2.3,
+   "banRate": 0.14,
+   "winRateDelta": -0.51
+  },
+  "橘右京": {
+   "tier": "T1",
+   "score": 53.23,
+   "role": "打野",
+   "winRate": 48.84,
+   "pickRate": 2,
+   "banRate": 0.24,
+   "winRateDelta": -0.06
+  },
+  "暃": {
+   "tier": "T1",
+   "score": 52.27,
+   "role": "打野",
+   "winRate": 47.56,
+   "pickRate": 2.7,
+   "banRate": 0.27,
+   "winRateDelta": -0.41
+  },
+  "大司命": {
+   "tier": "T1",
+   "score": 52.12,
+   "role": "打野",
+   "winRate": 48.9,
+   "pickRate": 10.9,
+   "banRate": 8.18,
+   "winRateDelta": 0.43
+  },
+  "李白": {
+   "tier": "T2",
+   "score": 36.5,
+   "role": "打野",
+   "winRate": 52.82,
+   "pickRate": 5.3,
+   "banRate": 0.51,
+   "winRateDelta": 0.06
+  },
+  "铠": {
+   "tier": "T2",
+   "score": 35.59,
+   "role": "打野",
+   "winRate": 49.61,
+   "pickRate": 9.5,
+   "banRate": 4.98,
+   "winRateDelta": 0.18
+  },
+  "云缨": {
+   "tier": "T2",
+   "score": 35.52,
+   "role": "打野",
+   "winRate": 52.75,
+   "pickRate": 6,
+   "banRate": 0.76,
+   "winRateDelta": 0.08
+  },
+  "典韦": {
+   "tier": "T2",
+   "score": 35.05,
+   "role": "打野",
+   "winRate": 48.29,
+   "pickRate": 7.9,
+   "banRate": 2.51,
+   "winRateDelta": 0.66
+  },
+  "雅典娜": {
+   "tier": "T2",
+   "score": 35.03,
+   "role": "打野",
+   "winRate": 56.45,
+   "pickRate": 0.9,
+   "banRate": 0.03,
+   "winRateDelta": -0.02
+  },
+  "宫本武藏": {
+   "tier": "T2",
+   "score": 34.18,
+   "role": "打野",
+   "winRate": 48.88,
+   "pickRate": 8.8,
+   "banRate": 8.53,
+   "winRateDelta": 0.29
+  },
+  "司马懿": {
+   "tier": "T2",
+   "score": 33.23,
+   "role": "打野",
+   "winRate": 52.43,
+   "pickRate": 3.4,
+   "banRate": 1.36,
+   "winRateDelta": 0.05
+  },
+  "澜": {
+   "tier": "T2",
+   "score": 33.09,
+   "role": "打野",
+   "winRate": 46.72,
+   "pickRate": 7.9,
+   "banRate": 3.9,
+   "winRateDelta": 0.12
+  },
+  "元流之子(刺客)": {
+   "tier": "T2",
+   "score": 32.05,
+   "role": "打野",
+   "winRate": 48.16,
+   "pickRate": 0.8,
+   "banRate": 0.1,
+   "winRateDelta": 0.14
+  },
+  "曜": {
+   "tier": "T2",
+   "score": 31.59,
+   "role": "打野",
+   "winRate": 49.21,
+   "pickRate": 2.2,
+   "banRate": 0.14,
+   "winRateDelta": -0.14
+  },
+  "娜可露露": {
+   "tier": "T3",
+   "score": 29.96,
+   "role": "打野",
+   "winRate": 48.45,
+   "pickRate": 2.2,
+   "banRate": 0.06,
+   "winRateDelta": 0.2
+  },
+  "刘备": {
+   "tier": "T3",
+   "score": 29.29,
+   "role": "打野",
+   "winRate": 54.02,
+   "pickRate": 7.7,
+   "banRate": 3.5,
+   "winRateDelta": 0.17
+  },
+  "阿轲": {
+   "tier": "T3",
+   "score": 17.84,
+   "role": "打野",
+   "winRate": 50.78,
+   "pickRate": 5.2,
+   "banRate": 2.01,
+   "winRateDelta": 0.15
+  },
+  "云中君": {
+   "tier": "T3",
+   "score": 17.61,
+   "role": "打野",
+   "winRate": 52.61,
+   "pickRate": 1,
+   "banRate": 0.04,
+   "winRateDelta": 0.12
+  },
+  "海月": {
+   "tier": "T0",
+   "score": 95.6,
+   "role": "中路",
+   "winRate": 46.22,
+   "pickRate": 5,
+   "banRate": 26.71,
+   "winRateDelta": -0.28
+  },
+  "沈梦溪": {
+   "tier": "T0.5",
+   "score": 66.79,
+   "role": "中路",
+   "winRate": 46.81,
+   "pickRate": 2.2,
+   "banRate": 0.35,
+   "winRateDelta": -0.09
+  },
+  "女娲": {
+   "tier": "T0.5",
+   "score": 64.79,
+   "role": "中路",
+   "winRate": 51.96,
+   "pickRate": 4.5,
+   "banRate": 1.5,
+   "winRateDelta": -0.02
+  },
+  "嫦娥": {
+   "tier": "T0.5",
+   "score": 60.78,
+   "role": "中路",
+   "winRate": 47.29,
+   "pickRate": 2.9,
+   "banRate": 0.56,
+   "winRateDelta": -0.15
+  },
+  "小乔": {
+   "tier": "T1",
+   "score": 58.25,
+   "role": "中路",
+   "winRate": 47.67,
+   "pickRate": 27.2,
+   "banRate": 1.28,
+   "winRateDelta": 0.14
+  },
+  "不知火舞": {
+   "tier": "T1",
+   "score": 55.7,
+   "role": "中路",
+   "winRate": 43.82,
+   "pickRate": 2.5,
+   "banRate": 0.41,
+   "winRateDelta": -0.16
+  },
+  "王维": {
+   "tier": "T1",
+   "score": 55.49,
+   "role": "中路",
+   "winRate": 51.59,
+   "pickRate": 4.7,
+   "banRate": 6.68,
+   "winRateDelta": -0.03
+  },
+  "武则天": {
+   "tier": "T1",
+   "score": 55.32,
+   "role": "中路",
+   "winRate": 53.1,
+   "pickRate": 2.9,
+   "banRate": 0.31,
+   "winRateDelta": -0.01
+  },
+  "西施": {
+   "tier": "T1",
+   "score": 54.02,
+   "role": "中路",
+   "winRate": 49.93,
+   "pickRate": 8.3,
+   "banRate": 16.1,
+   "winRateDelta": -0.45
+  },
+  "海诺": {
+   "tier": "T1",
+   "score": 52.18,
+   "role": "中路",
+   "winRate": 47.02,
+   "pickRate": 4.4,
+   "banRate": 4.05,
+   "winRateDelta": 0.02
+  },
+  "貂蝉": {
+   "tier": "T1",
+   "score": 51.85,
+   "role": "中路",
+   "winRate": 48.24,
+   "pickRate": 9.1,
+   "banRate": 5.21,
+   "winRateDelta": -0.28
+  },
+  "弈星": {
+   "tier": "T2",
+   "score": 36.85,
+   "role": "中路",
+   "winRate": 51.15,
+   "pickRate": 2.6,
+   "banRate": 0.89,
+   "winRateDelta": -0.01
+  },
+  "甄姬": {
+   "tier": "T2",
+   "score": 36.47,
+   "role": "中路",
+   "winRate": 52.98,
+   "pickRate": 14.7,
+   "banRate": 1.89,
+   "winRateDelta": 0.14
+  },
+  "上官婉儿": {
+   "tier": "T2",
+   "score": 34.79,
+   "role": "中路",
+   "winRate": 49.45,
+   "pickRate": 1.9,
+   "banRate": 0.94,
+   "winRateDelta": -0.42
+  },
+  "安琪拉": {
+   "tier": "T2",
+   "score": 34.6,
+   "role": "中路",
+   "winRate": 49.42,
+   "pickRate": 36.7,
+   "banRate": 10.32,
+   "winRateDelta": -0.01
+  },
+  "扁鹊": {
+   "tier": "T2",
+   "score": 33.35,
+   "role": "中路",
+   "winRate": 52.66,
+   "pickRate": 6.8,
+   "banRate": 0.81,
+   "winRateDelta": -0.09
+  },
+  "高渐离": {
+   "tier": "T2",
+   "score": 33.21,
+   "role": "中路",
+   "winRate": 49.49,
+   "pickRate": 2,
+   "banRate": 0.16,
+   "winRateDelta": 0.42
+  },
+  "嬴政": {
+   "tier": "T3",
+   "score": 27.49,
+   "role": "中路",
+   "winRate": 52.91,
+   "pickRate": 4.1,
+   "banRate": 0.17,
+   "winRateDelta": -0.1
+  },
+  "周瑜": {
+   "tier": "T3",
+   "score": 22.1,
+   "role": "中路",
+   "winRate": 51.44,
+   "pickRate": 2.8,
+   "banRate": 0.18,
+   "winRateDelta": 0.13
+  },
+  "王昭君": {
+   "tier": "T3",
+   "score": 18.51,
+   "role": "中路",
+   "winRate": 50.86,
+   "pickRate": 19.5,
+   "banRate": 15.26,
+   "winRateDelta": 0.05
+  },
+  "妲己": {
+   "tier": "T3",
+   "score": 17.16,
+   "role": "中路",
+   "winRate": 49.99,
+   "pickRate": 34.6,
+   "banRate": 14.15,
+   "winRateDelta": 0.13
+  },
+  "元流之子(法师)": {
+   "tier": "T4",
+   "score": 11.33,
+   "role": "中路",
+   "winRate": 54.63,
+   "pickRate": 1.7,
+   "banRate": 0.18,
+   "winRateDelta": 0.06
+  },
+  "米莱狄": {
+   "tier": "T4",
+   "score": 5.49,
+   "role": "中路",
+   "winRate": 47.56,
+   "pickRate": 9.8,
+   "banRate": 30.21,
+   "winRateDelta": 0.41
+  },
+  "敖隐": {
+   "tier": "T0",
+   "score": 83.27,
+   "role": "发育路",
+   "winRate": 48.46,
+   "pickRate": 7.1,
+   "banRate": 17.37,
+   "winRateDelta": 0.01
+  },
+  "元流之子(射手)": {
+   "tier": "T0.5",
+   "score": 62.64,
+   "role": "发育路",
+   "winRate": 47.84,
+   "pickRate": 5.2,
+   "banRate": 0.55,
+   "winRateDelta": -0.24
+  },
+  "戈娅": {
+   "tier": "T1",
+   "score": 59.83,
+   "role": "发育路",
+   "winRate": 49.14,
+   "pickRate": 2.5,
+   "banRate": 0.86,
+   "winRateDelta": 0.01
+  },
+  "公孙离": {
+   "tier": "T1",
+   "score": 58.88,
+   "role": "发育路",
+   "winRate": 42.15,
+   "pickRate": 4,
+   "banRate": 0.62,
+   "winRateDelta": -0.45
+  },
+  "李信": {
+   "tier": "T1",
+   "score": 58.47,
+   "role": "发育路",
+   "winRate": 53.37,
+   "pickRate": 19.9,
+   "banRate": 28.77,
+   "winRateDelta": 0.16
+  },
+  "百里守约": {
+   "tier": "T1",
+   "score": 56.27,
+   "role": "发育路",
+   "winRate": 50.77,
+   "pickRate": 12.8,
+   "banRate": 7.21,
+   "winRateDelta": -0.19
+  },
+  "苍": {
+   "tier": "T1",
+   "score": 55.2,
+   "role": "发育路",
+   "winRate": 50.51,
+   "pickRate": 3,
+   "banRate": 0.23,
+   "winRateDelta": 0.23
+  },
+  "莱西奥": {
+   "tier": "T1",
+   "score": 55.03,
+   "role": "发育路",
+   "winRate": 53.91,
+   "pickRate": 5.9,
+   "banRate": 0.26,
+   "winRateDelta": 0.11
+  },
+  "艾琳": {
+   "tier": "T1",
+   "score": 54.55,
+   "role": "发育路",
+   "winRate": 48.73,
+   "pickRate": 10.8,
+   "banRate": 2.1,
+   "winRateDelta": -0.18
+  },
+  "孙尚香": {
+   "tier": "T1",
+   "score": 52.84,
+   "role": "发育路",
+   "winRate": 46.5,
+   "pickRate": 16.4,
+   "banRate": 1.69,
+   "winRateDelta": 0.2
+  },
+  "狄仁杰": {
+   "tier": "T2",
+   "score": 38.99,
+   "role": "发育路",
+   "winRate": 51.48,
+   "pickRate": 10.1,
+   "banRate": 1.02,
+   "winRateDelta": 0.07
+  },
+  "虞姬": {
+   "tier": "T2",
+   "score": 38.48,
+   "role": "发育路",
+   "winRate": 49.89,
+   "pickRate": 16.4,
+   "banRate": 12.71,
+   "winRateDelta": 0.23
+  },
+  "黄忠": {
+   "tier": "T2",
+   "score": 37.78,
+   "role": "发育路",
+   "winRate": 53.6,
+   "pickRate": 7.5,
+   "banRate": 0.59,
+   "winRateDelta": 0.09
+  },
+  "鲁班七号": {
+   "tier": "T2",
+   "score": 37,
+   "role": "发育路",
+   "winRate": 49.12,
+   "pickRate": 20.7,
+   "banRate": 1.19,
+   "winRateDelta": 0.1
+  },
+  "后羿": {
+   "tier": "T2",
+   "score": 36.46,
+   "role": "发育路",
+   "winRate": 51.67,
+   "pickRate": 30.2,
+   "banRate": 1.64,
+   "winRateDelta": 0.13
+  },
+  "卢雅那": {
+   "tier": "T2",
+   "score": 35.4,
+   "role": "发育路",
+   "winRate": 51.25,
+   "pickRate": 6.6,
+   "banRate": 1.34,
+   "winRateDelta": 0.13
+  },
+  "孙权": {
+   "tier": "T2",
+   "score": 34.5,
+   "role": "发育路",
+   "winRate": 51.62,
+   "pickRate": 13.1,
+   "banRate": 4.95,
+   "winRateDelta": -0.01
+  },
+  "马可波罗": {
+   "tier": "T2",
+   "score": 32.89,
+   "role": "发育路",
+   "winRate": 49.03,
+   "pickRate": 16,
+   "banRate": 5.46,
+   "winRateDelta": -0.06
+  },
+  "蒙犽": {
+   "tier": "T2",
+   "score": 32.21,
+   "role": "发育路",
+   "winRate": 51.12,
+   "pickRate": 4.2,
+   "banRate": 0.37,
+   "winRateDelta": 0.17
+  },
+  "伽罗": {
+   "tier": "T3",
+   "score": 21.88,
+   "role": "发育路",
+   "winRate": 54.15,
+   "pickRate": 12.2,
+   "banRate": 4.53,
+   "winRateDelta": 0.16
+  },
+  "盾山": {
+   "tier": "T0",
+   "score": 100,
+   "role": "游走",
+   "winRate": 52.9,
+   "pickRate": 3.5,
+   "banRate": 42.02,
+   "winRateDelta": -0.21
+  },
+  "鲁班大师": {
+   "tier": "T0",
+   "score": 99.33,
+   "role": "游走",
+   "winRate": 48.9,
+   "pickRate": 1.5,
+   "banRate": 2.82,
+   "winRateDelta": -0.01
+  },
+  "元流之子(辅助)": {
+   "tier": "T0",
+   "score": 99.33,
+   "role": "游走",
+   "winRate": 49.73,
+   "pickRate": 2.9,
+   "banRate": 5.19,
+   "winRateDelta": -0.23
+  },
+  "少司缘": {
+   "tier": "T0",
+   "score": 87.8,
+   "role": "游走",
+   "winRate": 47.6,
+   "pickRate": 9.3,
+   "banRate": 29.97,
+   "winRateDelta": -0.23
+  },
+  "苏烈": {
+   "tier": "T0.5",
+   "score": 60.25,
+   "role": "游走",
+   "winRate": 49.01,
+   "pickRate": 2.3,
+   "banRate": 1.4,
+   "winRateDelta": -0.23
+  },
+  "张飞": {
+   "tier": "T1",
+   "score": 56.73,
+   "role": "游走",
+   "winRate": 48.89,
+   "pickRate": 4,
+   "banRate": 1.15,
+   "winRateDelta": -0.06
+  },
+  "太乙真人": {
+   "tier": "T1",
+   "score": 54.67,
+   "role": "游走",
+   "winRate": 48.46,
+   "pickRate": 0.7,
+   "banRate": 0.41,
+   "winRateDelta": 0.27
+  },
+  "刘邦": {
+   "tier": "T1",
+   "score": 53.36,
+   "role": "游走",
+   "winRate": 48.91,
+   "pickRate": 2.2,
+   "banRate": 0.59,
+   "winRateDelta": -0.37
+  },
+  "空空儿": {
+   "tier": "T1",
+   "score": 51.8,
+   "role": "游走",
+   "winRate": 45.95,
+   "pickRate": 0.5,
+   "banRate": 0.81,
+   "winRateDelta": -0.27
+  },
+  "瑶": {
+   "tier": "T1",
+   "score": 51.25,
+   "role": "游走",
+   "winRate": 51.06,
+   "pickRate": 24.3,
+   "banRate": 38.33,
+   "winRateDelta": 0.03
+  },
+  "墨子": {
+   "tier": "T2",
+   "score": 37.12,
+   "role": "游走",
+   "winRate": 51.75,
+   "pickRate": 12.1,
+   "banRate": 66.48,
+   "winRateDelta": 0.23
+  },
+  "大禹": {
+   "tier": "T2",
+   "score": 36.45,
+   "role": "游走",
+   "winRate": 52.71,
+   "pickRate": 4.2,
+   "banRate": 2.53,
+   "winRateDelta": 0.15
+  },
+  "钟馗": {
+   "tier": "T2",
+   "score": 34.92,
+   "role": "游走",
+   "winRate": 48.17,
+   "pickRate": 10.2,
+   "banRate": 36.93,
+   "winRateDelta": -0.12
+  },
+  "朵莉亚": {
+   "tier": "T2",
+   "score": 34.51,
+   "role": "游走",
+   "winRate": 47.33,
+   "pickRate": 19.2,
+   "banRate": 20.78,
+   "winRateDelta": -0.11
+  },
+  "鬼谷子": {
+   "tier": "T2",
+   "score": 33.98,
+   "role": "游走",
+   "winRate": 48.1,
+   "pickRate": 1.6,
+   "banRate": 3.37,
+   "winRateDelta": -0.21
+  },
+  "牛魔": {
+   "tier": "T2",
+   "score": 32.84,
+   "role": "游走",
+   "winRate": 52.66,
+   "pickRate": 5.2,
+   "banRate": 0.62,
+   "winRateDelta": 0.25
+  },
+  "桑启": {
+   "tier": "T2",
+   "score": 31.48,
+   "role": "游走",
+   "winRate": 52.24,
+   "pickRate": 6.6,
+   "banRate": 1.07,
+   "winRateDelta": 0.06
+  },
+  "刘禅": {
+   "tier": "T2",
+   "score": 30.86,
+   "role": "游走",
+   "winRate": 51.48,
+   "pickRate": 11.3,
+   "banRate": 9.82,
+   "winRateDelta": 0.29
+  },
+  "孙膑": {
+   "tier": "T3",
+   "score": 29.51,
+   "role": "游走",
+   "winRate": 49.98,
+   "pickRate": 5.5,
+   "banRate": 0.78,
+   "winRateDelta": -0.02
+  },
+  "廉颇": {
+   "tier": "T3",
+   "score": 27.27,
+   "role": "游走",
+   "winRate": 51.82,
+   "pickRate": 8.7,
+   "banRate": 5.46,
+   "winRateDelta": 0.26
+  },
+  "蔡文姬": {
+   "tier": "T3",
+   "score": 19.86,
+   "role": "游走",
+   "winRate": 51.66,
+   "pickRate": 15.2,
+   "banRate": 30.84,
+   "winRateDelta": 0.07
+  },
+  "庄周": {
+   "tier": "T4",
+   "score": 1,
+   "role": "游走",
+   "winRate": 51.94,
+   "pickRate": 6.5,
+   "banRate": 52.27,
+   "winRateDelta": 0.07
+  },
+  "明世隐": {
+   "tier": "T4",
+   "score": 0,
+   "role": "游走",
+   "winRate": 48.6,
+   "pickRate": 5.2,
+   "banRate": 1.6,
+   "winRateDelta": 0.4
+  }
+ },
+ "tags": {
+  "廉颇": [
+   "前排",
+   "开团",
+   "控制",
+   "免控"
+  ],
+  "小乔": [
+   "法伤",
+   "爆发",
+   "远程"
+  ],
+  "赵云": [
+   "位移",
+   "爆发",
+   "近战",
+   "控制"
+  ],
+  "墨子": [
+   "控制",
+   "法伤",
+   "开团",
+   "远程"
+  ],
+  "妲己": [
+   "法伤",
+   "爆发",
+   "硬控"
+  ],
+  "嬴政": [
+   "法伤",
+   "持续输出",
+   "远程"
+  ],
+  "孙尚香": [
+   "持续输出",
+   "远程",
+   "物伤",
+   "位移"
+  ],
+  "鲁班七号": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "庄周": [
+   "免控",
+   "保护",
+   "前排"
+  ],
+  "刘禅": [
+   "前排",
+   "硬控",
+   "开团"
+  ],
+  "高渐离": [
+   "法伤",
+   "爆发",
+   "近战"
+  ],
+  "阿轲": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "钟无艳": [
+   "前排",
+   "硬控",
+   "近战"
+  ],
+  "孙膑": [
+   "保护",
+   "控制"
+  ],
+  "扁鹊": [
+   "法伤",
+   "回复",
+   "持续输出",
+   "远程"
+  ],
+  "白起": [
+   "前排",
+   "硬控",
+   "开团"
+  ],
+  "芈月": [
+   "法伤",
+   "免控",
+   "持续输出"
+  ],
+  "吕布": [
+   "前排",
+   "近战",
+   "物伤",
+   "真伤"
+  ],
+  "周瑜": [
+   "法伤",
+   "持续输出",
+   "控制",
+   "远程"
+  ],
+  "元歌": [
+   "位移",
+   "爆发",
+   "收割"
+  ],
+  "夏侯惇": [
+   "前排",
+   "控制",
+   "近战"
+  ],
+  "甄姬": [
+   "法伤",
+   "控制",
+   "硬控",
+   "远程"
+  ],
+  "曹操": [
+   "近战",
+   "物伤",
+   "前排",
+   "持续输出"
+  ],
+  "典韦": [
+   "近战",
+   "物伤",
+   "爆发",
+   "收割"
+  ],
+  "宫本武藏": [
+   "位移",
+   "爆发",
+   "近战",
+   "收割"
+  ],
+  "李白": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "马可波罗": [
+   "持续输出",
+   "远程",
+   "物伤",
+   "位移"
+  ],
+  "狄仁杰": [
+   "持续输出",
+   "远程",
+   "物伤",
+   "免控"
+  ],
+  "达摩": [
+   "前排",
+   "硬控",
+   "开团",
+   "近战"
+  ],
+  "项羽": [
+   "前排",
+   "开团",
+   "控制",
+   "近战"
+  ],
+  "武则天": [
+   "法伤",
+   "硬控",
+   "远程",
+   "体系"
+  ],
+  "司马懿": [
+   "位移",
+   "爆发",
+   "收割",
+   "法伤"
+  ],
+  "王维": [
+   "法伤",
+   "爆发"
+  ],
+  "老夫子": [
+   "前排",
+   "近战",
+   "硬控"
+  ],
+  "关羽": [
+   "前排",
+   "开团",
+   "位移",
+   "控制"
+  ],
+  "貂蝉": [
+   "法伤",
+   "持续输出",
+   "真伤"
+  ],
+  "安琪拉": [
+   "法伤",
+   "爆发",
+   "控制",
+   "远程"
+  ],
+  "程咬金": [
+   "前排",
+   "回复",
+   "近战",
+   "物伤"
+  ],
+  "露娜": [
+   "位移",
+   "法伤",
+   "持续输出",
+   "收割"
+  ],
+  "姜子牙": [
+   "法伤",
+   "控制",
+   "远程"
+  ],
+  "刘邦": [
+   "前排",
+   "保护",
+   "体系"
+  ],
+  "韩信": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "孙权": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "王昭君": [
+   "法伤",
+   "控制",
+   "硬控",
+   "远程"
+  ],
+  "兰陵王": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "花木兰": [
+   "位移",
+   "近战",
+   "物伤",
+   "控制"
+  ],
+  "艾琳": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "张良": [
+   "硬控",
+   "控制",
+   "法伤",
+   "远程"
+  ],
+  "不知火舞": [
+   "位移",
+   "爆发",
+   "硬控",
+   "近战"
+  ],
+  "朵莉亚": [
+   "保护",
+   "回复",
+   "控制"
+  ],
+  "娜可露露": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "橘右京": [
+   "位移",
+   "爆发",
+   "近战",
+   "收割"
+  ],
+  "亚瑟": [
+   "前排",
+   "近战",
+   "物伤",
+   "控制"
+  ],
+  "孙悟空": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "牛魔": [
+   "前排",
+   "开团",
+   "硬控",
+   "控制"
+  ],
+  "后羿": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "刘备": [
+   "近战",
+   "物伤",
+   "前排",
+   "持续输出"
+  ],
+  "张飞": [
+   "前排",
+   "开团",
+   "保护",
+   "硬控"
+  ],
+  "蚩奼": [
+   "前排",
+   "近战",
+   "物伤"
+  ],
+  "李元芳": [
+   "持续输出",
+   "远程",
+   "物伤",
+   "位移"
+  ],
+  "虞姬": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "钟馗": [
+   "硬控",
+   "开团",
+   "法伤",
+   "控制"
+  ],
+  "杨玉环": [
+   "法伤",
+   "回复",
+   "持续输出"
+  ],
+  "苍": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "杨戬": [
+   "前排",
+   "近战",
+   "物伤",
+   "回复"
+  ],
+  "女娲": [
+   "法伤",
+   "控制",
+   "远程"
+  ],
+  "哪吒": [
+   "前排",
+   "开团",
+   "位移"
+  ],
+  "干将莫邪": [
+   "法伤",
+   "爆发",
+   "远程"
+  ],
+  "雅典娜": [
+   "位移",
+   "近战",
+   "物伤",
+   "爆发"
+  ],
+  "蔡文姬": [
+   "回复",
+   "保护",
+   "硬控"
+  ],
+  "太乙真人": [
+   "保护",
+   "控制",
+   "前排"
+  ],
+  "东皇太一": [
+   "硬控",
+   "前排",
+   "法伤",
+   "控制"
+  ],
+  "大禹": [
+   "前排",
+   "保护",
+   "控制"
+  ],
+  "鬼谷子": [
+   "开团",
+   "位移",
+   "控制"
+  ],
+  "诸葛亮": [
+   "法伤",
+   "爆发",
+   "收割",
+   "位移"
+  ],
+  "大乔": [
+   "体系",
+   "保护",
+   "控制",
+   "远程"
+  ],
+  "黄忠": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "铠": [
+   "前排",
+   "近战",
+   "物伤",
+   "爆发"
+  ],
+  "苏烈": [
+   "前排",
+   "开团",
+   "硬控",
+   "控制"
+  ],
+  "百里玄策": [
+   "位移",
+   "爆发",
+   "收割"
+  ],
+  "百里守约": [
+   "远程",
+   "爆发",
+   "物伤",
+   "收割"
+  ],
+  "弈星": [
+   "法伤",
+   "控制",
+   "硬控",
+   "远程"
+  ],
+  "梦奇": [
+   "前排",
+   "法伤",
+   "近战"
+  ],
+  "公孙离": [
+   "持续输出",
+   "远程",
+   "物伤",
+   "位移"
+  ],
+  "沈梦溪": [
+   "法伤",
+   "远程",
+   "持续输出",
+   "位移"
+  ],
+  "明世隐": [
+   "保护",
+   "回复",
+   "体系"
+  ],
+  "裴擒虎": [
+   "位移",
+   "爆发",
+   "近战",
+   "收割"
+  ],
+  "狂铁": [
+   "前排",
+   "近战",
+   "物伤",
+   "护盾"
+  ],
+  "米莱狄": [
+   "法伤",
+   "持续输出",
+   "远程"
+  ],
+  "瑶": [
+   "保护",
+   "护盾"
+  ],
+  "云中君": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "李信": [
+   "前排",
+   "近战",
+   "物伤"
+  ],
+  "伽罗": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "盾山": [
+   "前排",
+   "保护",
+   "控制"
+  ],
+  "孙策": [
+   "前排",
+   "开团",
+   "控制",
+   "物伤"
+  ],
+  "猪八戒": [
+   "前排",
+   "回复",
+   "控制",
+   "近战"
+  ],
+  "上官婉儿": [
+   "位移",
+   "法伤",
+   "爆发",
+   "收割"
+  ],
+  "亚连": [
+   "前排",
+   "近战",
+   "物伤"
+  ],
+  "嫦娥": [
+   "法伤",
+   "护盾",
+   "控制",
+   "近战"
+  ],
+  "大司命": [
+   "前排",
+   "近战",
+   "物伤"
+  ],
+  "马超": [
+   "位移",
+   "近战",
+   "物伤",
+   "持续输出"
+  ],
+  "敖隐": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "海月": [
+   "法伤",
+   "爆发",
+   "控制",
+   "远程"
+  ],
+  "曜": [
+   "位移",
+   "爆发",
+   "近战"
+  ],
+  "西施": [
+   "控制",
+   "法伤",
+   "硬控",
+   "远程"
+  ],
+  "蒙犽": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "鲁班大师": [
+   "保护",
+   "控制",
+   "前排"
+  ],
+  "蒙恬": [
+   "前排",
+   "近战",
+   "物伤"
+  ],
+  "澜": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "盘古": [
+   "前排",
+   "近战",
+   "物伤"
+  ],
+  "镜": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "阿古朵": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "桑启": [
+   "回复",
+   "保护",
+   "控制"
+  ],
+  "夏洛特": [
+   "位移",
+   "近战",
+   "物伤",
+   "爆发"
+  ],
+  "司空震": [
+   "法伤",
+   "近战",
+   "持续输出"
+  ],
+  "云缨": [
+   "位移",
+   "近战",
+   "物伤"
+  ],
+  "金蝉": [
+   "控制",
+   "法伤",
+   "保护"
+  ],
+  "暃": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "赵怀真": [
+   "前排",
+   "近战",
+   "物伤",
+   "控制"
+  ],
+  "莱西奥": [
+   "持续输出",
+   "远程",
+   "物伤",
+   "位移"
+  ],
+  "卢雅那": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "戈娅": [
+   "持续输出",
+   "远程",
+   "物伤",
+   "位移"
+  ],
+  "心魔六耳": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "空空儿": [
+   "保护",
+   "控制"
+  ],
+  "影": [
+   "前排",
+   "近战",
+   "物伤"
+  ],
+  "海诺": [
+   "法伤",
+   "控制",
+   "近战"
+  ],
+  "姬小满": [
+   "近战",
+   "物伤",
+   "爆发",
+   "位移"
+  ],
+  "少司缘": [
+   "保护",
+   "回复",
+   "控制"
+  ],
+  "元流之子(坦克)": [
+   "前排",
+   "开团",
+   "控制"
+  ],
+  "元流之子(法师)": [
+   "法伤",
+   "爆发",
+   "远程",
+   "控制"
+  ],
+  "元流之子(刺客)": [
+   "位移",
+   "爆发",
+   "收割",
+   "近战"
+  ],
+  "元流之子(射手)": [
+   "持续输出",
+   "远程",
+   "物伤"
+  ],
+  "元流之子(辅助)": [
+   "保护",
+   "回复",
+   "控制"
+  ]
+ },
+ "overrides": {
+  "元流之子(刺客)": {
+   "type": [
+    "刺客"
+   ]
+  }
+ },
+ "weights": {
+  "tier": 10,
+  "threat": 1.5,
+  "fragility": 0.8,
+  "answerable": 1,
+  "counter": 1.1,
+  "countered": 0.9,
+  "synergy": 1,
+  "compNeed": 1.4,
+  "laneNeed": 1.4
+ }
+}

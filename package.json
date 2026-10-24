@@ -1,0 +1,17 @@
+{
+  "name": "honor-of-kings-bp-assistant",
+  "version": "2.5.0",
+  "private": true,
+  "description": "王者荣耀五排 BP 平台：本地运行、零依赖的 Ban/Pick 决策辅助",
+  "scripts": {
+    "start": "node server.mjs --port 3721 --open",
+    "test": "node tools/test-engine.mjs",
+    "test:smoke": "node tools/smoke.mjs",
+    "test:e2e": "node tools/e2e.mjs",
+    "validate": "node tools/validate-data.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

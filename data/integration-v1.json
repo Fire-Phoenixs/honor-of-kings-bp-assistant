@@ -1,0 +1,4649 @@
+{
+ "version": "2.0",
+ "date": "2026-10-24",
+ "principle": "单卡与组合分离：score.solo 只由天元单卡强度决定（不掺组合）；comboPotential 仅供提示、不参与任何排序；组合的成型加成由引擎（web/engine.js presetFitOf）在拿到核心件时结算。",
+ "sources": {
+  "tianYuan": "data/meta.json（tiers: tier/score/banRate/pickRate/winRate）",
+  "kpl": "data/kpl-bp-stats.json（159 局 2026 KPL 年总）",
+  "combos": "data/combos.json（34 条组合，仅用于 comboPotential 提示）"
+ },
+ "config": {
+  "banWeightTianYuan": 0.55,
+  "banWeightKpl": 0.45,
+  "banWeightTier": 0.2,
+  "comboPriority": {
+   "S": 1,
+   "A": 0.7,
+   "B": 0.4
+  },
+  "comboFlexFactor": 0.5
+ },
+ "heroes": [
+  {
+   "hero": "盾山",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 100,
+    "banRate": 42.02,
+    "pickRate": 3.5,
+    "winRate": 52.9,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 67.5,
+    "pickRate": 21.2,
+    "winRate": 54.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 1,
+    "ban": 0.735
+   },
+   "kplDelta": 1.2,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "yangzhuliu",
+      "name": "养猪流（四保一）",
+      "priority": "S",
+      "role": "flex",
+      "slot": "刘邦",
+      "weight": 0.5
+     },
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "朵莉亚",
+      "weight": 0.35
+     },
+     {
+      "id": "jiangwang-boshi",
+      "name": "僵王博士（鲁班七号 + 盾山）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "dunshan-lixin",
+      "name": "盾山 + 李信（托举移动输出）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "both"
+  },
+  {
+   "hero": "鲁班大师",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 99.33,
+    "banRate": 2.82,
+    "pickRate": 1.5,
+    "winRate": 48.9,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 80,
+    "pickRate": 16.5,
+    "winRate": 56.4,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.993,
+    "ban": 0.574
+   },
+   "kplDelta": 7.5,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "yidong-paotai",
+      "name": "移动炮台（鲁班大师 + 黄忠）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "luban-fuzi",
+      "name": "鲁班父子（鲁班大师 + 鲁班七号）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "dangong",
+      "name": "弹弓（姜子牙 + 鲁班大师）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "kpl-only"
+  },
+  {
+   "hero": "元流之子(辅助)",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 99.33,
+    "banRate": 5.19,
+    "pickRate": 2.9,
+    "winRate": 49.73,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 23.4,
+    "pickRate": 4.9,
+    "winRate": 47.7,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.993,
+    "ban": 0.333
+   },
+   "kplDelta": -2,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "yuandi",
+      "name": "元狄（狄仁杰 + 元流之子辅助）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "海月",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 95.6,
+    "banRate": 26.71,
+    "pickRate": 5,
+    "winRate": 46.22,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 41,
+    "pickRate": 19.7,
+    "winRate": 49.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.956,
+    "ban": 0.523
+   },
+   "kplDelta": 3.6,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "shuangtan-busiliu",
+      "name": "双坦不死流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "both"
+  },
+  {
+   "hero": "少司缘",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 87.8,
+    "banRate": 29.97,
+    "pickRate": 9.3,
+    "winRate": 47.6,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 11.8,
+    "pickRate": 26.5,
+    "winRate": 47.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.878,
+    "ban": 0.394
+   },
+   "kplDelta": -0.5,
+   "comboPotential": {
+    "value": 0.75,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "朵莉亚",
+      "weight": 0.35
+     },
+     {
+      "id": "yuanli",
+      "name": "缘离（公孙离 + 少司缘）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "关羽",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 85.36,
+    "banRate": 4.48,
+    "pickRate": 4.8,
+    "winRate": 46.77,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 46.9,
+    "pickRate": 21.1,
+    "winRate": 57.7,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.854,
+    "ban": 0.406
+   },
+   "kplDelta": 10.9,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "kpl-only"
+  },
+  {
+   "hero": "镜",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 85.29,
+    "banRate": 0.81,
+    "pickRate": 3,
+    "winRate": 41.98,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 26.1,
+    "pickRate": 12.8,
+    "winRate": 52.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.853,
+    "ban": 0.292
+   },
+   "kplDelta": 10.1,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "kpl-jingdian-junheng",
+      "name": "KPL 经典均衡（廉颇+镜+不知火舞+公孙离+大乔）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "敖隐",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 83.27,
+    "banRate": 17.37,
+    "pickRate": 7.1,
+    "winRate": 48.46,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 35,
+    "pickRate": 33.1,
+    "winRate": 49.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.833,
+    "ban": 0.42
+   },
+   "kplDelta": 0.6,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "nailong",
+      "name": "奶龙（桑启 + 敖隐）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "daixian-tuanzhan",
+      "name": "带线团战结合（边路牵制流）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     },
+     {
+      "id": "kuaigong-lache",
+      "name": "快攻拉扯流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "裴擒虎",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 82.43,
+    "banRate": 0.37,
+    "pickRate": 2.7,
+    "winRate": 44.37,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 14.5,
+    "pickRate": 14.2,
+    "winRate": 48.4,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.824,
+    "ban": 0.232
+   },
+   "kplDelta": 4,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "马超",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 78.74,
+    "banRate": 1.44,
+    "pickRate": 6.1,
+    "winRate": 44.16,
+    "role": "打野/对抗路"
+   },
+   "kpl": {
+    "banRate": 16.3,
+    "pickRate": 17.6,
+    "winRate": 43.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.787,
+    "ban": 0.239
+   },
+   "kplDelta": -0.4,
+   "comboPotential": {
+    "value": 0.8,
+    "memberships": [
+     {
+      "id": "machao-aguduo",
+      "name": "马超 + 阿古朵",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "machao-aguduo-sunbin-zhouyu",
+      "name": "马超 + 阿古朵 + 孙膑 + 周瑜（KPL 联动）",
+      "priority": "B",
+      "size": 4,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "大乔",
+   "tier": "T0",
+   "tianYuan": {
+    "score": 75.05,
+    "banRate": 28.67,
+    "pickRate": 8.5,
+    "winRate": 48.14,
+    "role": "中路/游走"
+   },
+   "kpl": {
+    "banRate": 1.2,
+    "pickRate": 1.7,
+    "winRate": 59.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.75,
+    "ban": 0.313
+   },
+   "kplDelta": 11,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "daoqiangpao",
+      "name": "刀枪炮",
+      "priority": "S",
+      "role": "flex",
+      "slot": "墨子",
+      "weight": 0.5
+     },
+     {
+      "id": "moshouchenggui",
+      "name": "墨守成规（百里守约 + 墨子）",
+      "priority": "A",
+      "role": "flex",
+      "slot": "墨子",
+      "weight": 0.35
+     },
+     {
+      "id": "yuanli",
+      "name": "缘离（公孙离 + 少司缘）",
+      "priority": "B",
+      "role": "flex",
+      "slot": "少司缘",
+      "weight": 0.2
+     },
+     {
+      "id": "qiaoli",
+      "name": "乔离（公孙离 + 大乔）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "guiguzi-daqiao",
+      "name": "鬼谷子 + 大乔（强开传送）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "daqiao-huicheng",
+      "name": "大乔回城流（大乔 + 李白）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "qiaofu",
+      "name": "乔夫（大乔 + 老夫子）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "kpl-jingdian-junheng",
+      "name": "KPL 经典均衡（廉颇+镜+不知火舞+公孙离+大乔）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "沈梦溪",
+   "tier": "T0.5",
+   "tianYuan": {
+    "score": 66.79,
+    "banRate": 0.35,
+    "pickRate": 2.2,
+    "winRate": 46.81,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 31.3,
+    "pickRate": 33.8,
+    "winRate": 50.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.668,
+    "ban": 0.276
+   },
+   "kplDelta": 4,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "shuangtan-busiliu",
+      "name": "双坦不死流",
+      "priority": "B",
+      "role": "flex",
+      "slot": "海月",
+      "weight": 0.2
+     },
+     {
+      "id": "daoqiangpao",
+      "name": "刀枪炮",
+      "priority": "S",
+      "size": 4,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "女娲",
+   "tier": "T0.5",
+   "tianYuan": {
+    "score": 64.79,
+    "banRate": 1.5,
+    "pickRate": 4.5,
+    "winRate": 51.96,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 15.6,
+    "pickRate": 16.1,
+    "winRate": 53.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.648,
+    "ban": 0.208
+   },
+   "kplDelta": 1.1,
+   "comboPotential": {
+    "value": 0.35,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "武则天",
+      "weight": 0.35
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "赵云",
+   "tier": "T0.5",
+   "tianYuan": {
+    "score": 63.31,
+    "banRate": 3.19,
+    "pickRate": 16.3,
+    "winRate": 54.13,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 10.4,
+    "pickRate": 13.5,
+    "winRate": 59.2,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.633,
+    "ban": 0.191
+   },
+   "kplDelta": 5.1,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "元流之子(射手)",
+   "tier": "T0.5",
+   "tianYuan": {
+    "score": 62.64,
+    "banRate": 0.55,
+    "pickRate": 5.2,
+    "winRate": 47.84,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 2.1,
+    "pickRate": 2.6,
+    "winRate": 32.4,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.626,
+    "ban": 0.138
+   },
+   "kplDelta": -15.4,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "元歌",
+   "tier": "T0.5",
+   "tianYuan": {
+    "score": 61.42,
+    "banRate": 0.35,
+    "pickRate": 2.2,
+    "winRate": 48.49,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 0.3,
+    "pickRate": 0.8,
+    "winRate": 40,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.614,
+    "ban": 0.126
+   },
+   "kplDelta": -8.5,
+   "comboPotential": {
+    "value": 0.2,
+    "memberships": [
+     {
+      "id": "daqiao-huicheng",
+      "name": "大乔回城流（大乔 + 李白）",
+      "priority": "B",
+      "role": "flex",
+      "slot": "李白",
+      "weight": 0.2
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "嫦娥",
+   "tier": "T0.5",
+   "tianYuan": {
+    "score": 60.78,
+    "banRate": 0.56,
+    "pickRate": 2.9,
+    "winRate": 47.29,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 2.8,
+    "pickRate": 6.5,
+    "winRate": 53.5,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.608,
+    "ban": 0.137
+   },
+   "kplDelta": 6.2,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "苏烈",
+   "tier": "T0.5",
+   "tianYuan": {
+    "score": 60.25,
+    "banRate": 1.4,
+    "pickRate": 2.3,
+    "winRate": 49.01,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 24.5,
+    "pickRate": 32,
+    "winRate": 49.9,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.603,
+    "ban": 0.238
+   },
+   "kplDelta": 0.9,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "戈娅",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 59.83,
+    "banRate": 0.86,
+    "pickRate": 2.5,
+    "winRate": 49.14,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 12,
+    "pickRate": 33.7,
+    "winRate": 56.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.598,
+    "ban": 0.178
+   },
+   "kplDelta": 7,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "阿古朵",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 59.22,
+    "banRate": 0.82,
+    "pickRate": 3,
+    "winRate": 53.59,
+    "role": "打野/发育路(次分路)"
+   },
+   "kpl": {
+    "banRate": 22.6,
+    "pickRate": 12.1,
+    "winRate": 46.9,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.592,
+    "ban": 0.225
+   },
+   "kplDelta": -6.7,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "machao-aguduo",
+      "name": "马超 + 阿古朵",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "machao-aguduo-sunbin-zhouyu",
+      "name": "马超 + 阿古朵 + 孙膑 + 周瑜（KPL 联动）",
+      "priority": "B",
+      "size": 4,
+      "role": "core"
+     },
+     {
+      "id": "dayu-xiaohao",
+      "name": "大禹手长消耗队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "司空震",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 58.93,
+    "banRate": 2.21,
+    "pickRate": 7.5,
+    "winRate": 46.99,
+    "role": "对抗路/发育路(次分路)"
+   },
+   "kpl": {
+    "banRate": 19.3,
+    "pickRate": 19.8,
+    "winRate": 45,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.589,
+    "ban": 0.217
+   },
+   "kplDelta": -2,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "公孙离",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 58.88,
+    "banRate": 0.62,
+    "pickRate": 4,
+    "winRate": 42.15,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 10.1,
+    "pickRate": 18.1,
+    "winRate": 49.2,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.589,
+    "ban": 0.167
+   },
+   "kplDelta": 7.1,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "daqiao-huicheng",
+      "name": "大乔回城流（大乔 + 李白）",
+      "priority": "B",
+      "role": "flex",
+      "slot": "李白",
+      "weight": 0.2
+     },
+     {
+      "id": "qiaoli",
+      "name": "乔离（公孙离 + 大乔）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "yuanli",
+      "name": "缘离（公孙离 + 少司缘）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "kpl-jingdian-junheng",
+      "name": "KPL 经典均衡（廉颇+镜+不知火舞+公孙离+大乔）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "狂铁",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 58.54,
+    "banRate": 0.58,
+    "pickRate": 3.7,
+    "winRate": 46.53,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 23.4,
+    "pickRate": 32.7,
+    "winRate": 52.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.585,
+    "ban": 0.226
+   },
+   "kplDelta": 5.6,
+   "comboPotential": {
+    "value": 0.35,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "曹操",
+      "weight": 0.35
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "李信",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 58.47,
+    "banRate": 28.77,
+    "pickRate": 19.9,
+    "winRate": 53.37,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 0.2,
+    "pickRate": 0.3,
+    "winRate": 50,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.585,
+    "ban": 0.276
+   },
+   "kplDelta": -3.4,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "daoqiangpao",
+      "name": "刀枪炮",
+      "priority": "S",
+      "size": 4,
+      "role": "core"
+     },
+     {
+      "id": "dunshan-lixin",
+      "name": "盾山 + 李信（托举移动输出）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "小乔",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 58.25,
+    "banRate": 1.28,
+    "pickRate": 27.2,
+    "winRate": 47.67,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 14.2,
+    "pickRate": 26.3,
+    "winRate": 51.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.583,
+    "ban": 0.187
+   },
+   "kplDelta": 3.4,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "xiaoqiao-zhongkui",
+      "name": "小乔钟馗",
+      "priority": "S",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "诸葛亮",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 58.22,
+    "banRate": 3.15,
+    "pickRate": 9,
+    "winRate": 47.68,
+    "role": "中路/打野(次分路)"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.2,
+    "winRate": 100,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.582,
+    "ban": 0.134
+   },
+   "kplDelta": 52.3,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "哪吒",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 58.14,
+    "banRate": 7.79,
+    "pickRate": 7,
+    "winRate": 53.04,
+    "role": "对抗路/打野(次分路)"
+   },
+   "kpl": {
+    "banRate": 24,
+    "pickRate": 8.3,
+    "winRate": 49.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.581,
+    "ban": 0.267
+   },
+   "kplDelta": -3.9,
+   "comboPotential": {
+    "value": 0.35,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "曹操",
+      "weight": 0.35
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "蚩奼",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 57.02,
+    "banRate": 0.6,
+    "pickRate": 6.1,
+    "winRate": 48.11,
+    "role": "发育路/对抗路"
+   },
+   "kpl": {
+    "banRate": 15.9,
+    "pickRate": 19.9,
+    "winRate": 46.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.57,
+    "ban": 0.189
+   },
+   "kplDelta": -1.3,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "张飞",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 56.73,
+    "banRate": 1.15,
+    "pickRate": 4,
+    "winRate": 48.89,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 11.2,
+    "pickRate": 26.9,
+    "winRate": 51.7,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.567,
+    "ban": 0.17
+   },
+   "kplDelta": 2.8,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "huangzhong-zhangfei",
+      "name": "黄忠 + 张飞",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "杨玉环",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 56.31,
+    "banRate": 0.23,
+    "pickRate": 2.6,
+    "winRate": 48.3,
+    "role": "中路/游走(次分路)"
+   },
+   "kpl": {
+    "banRate": 0.8,
+    "pickRate": 4.7,
+    "winRate": 48.4,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.563,
+    "ban": 0.117
+   },
+   "kplDelta": 0.1,
+   "comboPotential": {
+    "value": 0.75,
+    "memberships": [
+     {
+      "id": "nailong",
+      "name": "奶龙（桑启 + 敖隐）",
+      "priority": "A",
+      "role": "flex",
+      "slot": "桑启",
+      "weight": 0.35
+     },
+     {
+      "id": "sunbaiyang",
+      "name": "孙白杨（孙膑 + 白起 + 杨玉环）",
+      "priority": "B",
+      "size": 3,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "百里守约",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 56.27,
+    "banRate": 7.21,
+    "pickRate": 12.8,
+    "winRate": 50.77,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 3.4,
+    "pickRate": 6.5,
+    "winRate": 44.2,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.563,
+    "ban": 0.167
+   },
+   "kplDelta": -6.6,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "daoqiangpao",
+      "name": "刀枪炮",
+      "priority": "S",
+      "size": 4,
+      "role": "core"
+     },
+     {
+      "id": "moshouchenggui",
+      "name": "墨守成规（百里守约 + 墨子）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "dayu-xiaohao",
+      "name": "大禹手长消耗队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "曹操",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 56.08,
+    "banRate": 0.24,
+    "pickRate": 3.5,
+    "winRate": 51.73,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 9.7,
+    "pickRate": 24.3,
+    "winRate": 53,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.561,
+    "ban": 0.157
+   },
+   "kplDelta": 1.3,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "不知火舞",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 55.7,
+    "banRate": 0.41,
+    "pickRate": 2.5,
+    "winRate": 43.82,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 21.5,
+    "pickRate": 14.6,
+    "winRate": 50.3,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.557,
+    "ban": 0.21
+   },
+   "kplDelta": 6.5,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "kpl-jingdian-junheng",
+      "name": "KPL 经典均衡（廉颇+镜+不知火舞+公孙离+大乔）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "孙悟空",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 55.62,
+    "banRate": 3.85,
+    "pickRate": 16.5,
+    "winRate": 47.81,
+    "role": "打野"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.556,
+    "ban": 0.132
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "王维",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 55.49,
+    "banRate": 6.68,
+    "pickRate": 4.7,
+    "winRate": 51.59,
+    "role": "中路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.555,
+    "ban": 0.148
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "dayu-xiaohao",
+      "name": "大禹手长消耗队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "夏洛特",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 55.29,
+    "banRate": 0.18,
+    "pickRate": 2.9,
+    "winRate": 46.84,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 14.3,
+    "pickRate": 31.4,
+    "winRate": 46.2,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.553,
+    "ban": 0.176
+   },
+   "kplDelta": -0.6,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "武则天",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 55.32,
+    "banRate": 0.31,
+    "pickRate": 2.9,
+    "winRate": 53.1,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 14.2,
+    "pickRate": 22.8,
+    "winRate": 48.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.553,
+    "ban": 0.176
+   },
+   "kplDelta": -4.3,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "苍",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 55.2,
+    "banRate": 0.23,
+    "pickRate": 3,
+    "winRate": 50.51,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 6.1,
+    "pickRate": 22.9,
+    "winRate": 49.2,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.552,
+    "ban": 0.139
+   },
+   "kplDelta": -1.3,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "影",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 54.99,
+    "banRate": 1.05,
+    "pickRate": 6.2,
+    "winRate": 51.87,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 3.3,
+    "pickRate": 10.1,
+    "winRate": 45.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.55,
+    "ban": 0.131
+   },
+   "kplDelta": -6.8,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "莱西奥",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 55.03,
+    "banRate": 0.26,
+    "pickRate": 5.9,
+    "winRate": 53.91,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 0.3,
+    "pickRate": 2,
+    "winRate": 48.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.55,
+    "ban": 0.113
+   },
+   "kplDelta": -5.8,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "duoliyashua-laisiao",
+      "name": "朵莉亚 + 莱西奥（超长浮空）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "shuangtan-busiliu",
+      "name": "双坦不死流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "太乙真人",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 54.67,
+    "banRate": 0.41,
+    "pickRate": 0.7,
+    "winRate": 48.46,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 5.7,
+    "pickRate": 16.3,
+    "winRate": 51.4,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.547,
+    "ban": 0.137
+   },
+   "kplDelta": 2.9,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "yangzhuliu",
+      "name": "养猪流（四保一）",
+      "priority": "S",
+      "role": "flex",
+      "slot": "刘邦",
+      "weight": 0.5
+     },
+     {
+      "id": "zhenxiang",
+      "name": "真香（孙尚香 + 太乙真人）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "韩信",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 54.48,
+    "banRate": 0.37,
+    "pickRate": 5.2,
+    "winRate": 47.86,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.3,
+    "winRate": 25,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.545,
+    "ban": 0.111
+   },
+   "kplDelta": -22.9,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "艾琳",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 54.55,
+    "banRate": 2.1,
+    "pickRate": 10.8,
+    "winRate": 48.73,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 4.8,
+    "pickRate": 20.3,
+    "winRate": 54.3,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.545,
+    "ban": 0.142
+   },
+   "kplDelta": 5.6,
+   "comboPotential": {
+    "value": 0.75,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "蚩奼",
+      "weight": 0.35
+     },
+     {
+      "id": "niumo-ailin",
+      "name": "牛魔 + 艾琳（双抗坦射）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "百里玄策",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 54.11,
+    "banRate": 0.22,
+    "pickRate": 2.9,
+    "winRate": 47.91,
+    "role": "打野"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.541,
+    "ban": 0.109
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "西施",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 54.02,
+    "banRate": 16.1,
+    "pickRate": 8.3,
+    "winRate": 49.93,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 7.8,
+    "pickRate": 5.6,
+    "winRate": 39.2,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.54,
+    "ban": 0.232
+   },
+   "kplDelta": -10.7,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "露娜",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 53.9,
+    "banRate": 0.14,
+    "pickRate": 2.3,
+    "winRate": 43.54,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 0.3,
+    "pickRate": 0.8,
+    "winRate": 40,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.539,
+    "ban": 0.11
+   },
+   "kplDelta": -3.5,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "蒙恬",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 53.37,
+    "banRate": 0.97,
+    "pickRate": 1,
+    "winRate": 43.42,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 11.5,
+    "pickRate": 8.8,
+    "winRate": 55.6,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.534,
+    "ban": 0.164
+   },
+   "kplDelta": 12.2,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "刘邦",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 53.36,
+    "banRate": 0.59,
+    "pickRate": 2.2,
+    "winRate": 48.91,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 0.1,
+    "pickRate": 0.5,
+    "winRate": 28.6,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.534,
+    "ban": 0.11
+   },
+   "kplDelta": -20.3,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "yangzhuliu",
+      "name": "养猪流（四保一）",
+      "priority": "S",
+      "size": 4,
+      "role": "core"
+     },
+     {
+      "id": "liubang-sunquan",
+      "name": "刘邦 + 孙权",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "橘右京",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 53.23,
+    "banRate": 0.24,
+    "pickRate": 2,
+    "winRate": 48.84,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 15,
+    "pickRate": 16.5,
+    "winRate": 55,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.532,
+    "ban": 0.175
+   },
+   "kplDelta": 6.2,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "杨戬",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 52.86,
+    "banRate": 0.37,
+    "pickRate": 3.8,
+    "winRate": 51.31,
+    "role": "打野/对抗路"
+   },
+   "kpl": {
+    "banRate": 21.5,
+    "pickRate": 16.8,
+    "winRate": 50.9,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.529,
+    "ban": 0.205
+   },
+   "kplDelta": -0.4,
+   "comboPotential": {
+    "value": 0.75,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "铠",
+      "weight": 0.35
+     },
+     {
+      "id": "anqila-tuijin",
+      "name": "安琪拉推进队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "夏侯惇",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 52.86,
+    "banRate": 6.61,
+    "pickRate": 15.6,
+    "winRate": 54.21,
+    "role": "对抗路/游走(次分路)/打野(次分路)"
+   },
+   "kpl": {
+    "banRate": 11.3,
+    "pickRate": 15.8,
+    "winRate": 48.3,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.529,
+    "ban": 0.193
+   },
+   "kplDelta": -5.9,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "shuangtan-busiliu",
+      "name": "双坦不死流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "孙尚香",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 52.84,
+    "banRate": 1.69,
+    "pickRate": 16.4,
+    "winRate": 46.5,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 1.4,
+    "pickRate": 7.7,
+    "winRate": 46.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.528,
+    "ban": 0.121
+   },
+   "kplDelta": -0.4,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "zhenxiang",
+      "name": "真香（孙尚香 + 太乙真人）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "花木兰",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 52.36,
+    "banRate": 0.09,
+    "pickRate": 2.9,
+    "winRate": 46.33,
+    "role": "对抗路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.524,
+    "ban": 0.105
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "暃",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 52.27,
+    "banRate": 0.27,
+    "pickRate": 2.7,
+    "winRate": 47.56,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 3.9,
+    "pickRate": 4.5,
+    "winRate": 50.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.523,
+    "ban": 0.124
+   },
+   "kplDelta": 3.2,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "daixian-tuanzhan",
+      "name": "带线团战结合（边路牵制流）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "海诺",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 52.18,
+    "banRate": 4.05,
+    "pickRate": 4.4,
+    "winRate": 47.02,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 2.4,
+    "pickRate": 3.3,
+    "winRate": 43.2,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.522,
+    "ban": 0.137
+   },
+   "kplDelta": -3.8,
+   "comboPotential": {
+    "value": 0.8,
+    "memberships": [
+     {
+      "id": "dayu-xiaohao",
+      "name": "大禹手长消耗队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     },
+     {
+      "id": "anqila-tuijin",
+      "name": "安琪拉推进队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "大司命",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 52.12,
+    "banRate": 8.18,
+    "pickRate": 10.9,
+    "winRate": 48.9,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 33,
+    "pickRate": 21.4,
+    "winRate": 47.7,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.521,
+    "ban": 0.298
+   },
+   "kplDelta": -1.2,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "姬小满",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 51.96,
+    "banRate": 0.21,
+    "pickRate": 1.5,
+    "winRate": 44.32,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 0.1,
+    "pickRate": 1.3,
+    "winRate": 52.9,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.52,
+    "ban": 0.106
+   },
+   "kplDelta": 8.6,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "貂蝉",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 51.85,
+    "banRate": 5.21,
+    "pickRate": 9.1,
+    "winRate": 48.24,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.1,
+    "winRate": 0,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.518,
+    "ban": 0.132
+   },
+   "kplDelta": -48.2,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "空空儿",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 51.8,
+    "banRate": 0.81,
+    "pickRate": 0.5,
+    "winRate": 45.95,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 14.7,
+    "pickRate": 9.1,
+    "winRate": 48.3,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.518,
+    "ban": 0.174
+   },
+   "kplDelta": 2.3,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "kuaigong-lache",
+      "name": "快攻拉扯流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "瑶",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 51.25,
+    "banRate": 38.33,
+    "pickRate": 24.3,
+    "winRate": 51.06,
+    "role": "游走"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.512,
+    "ban": 0.313
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "mayao",
+      "name": "马瑶（马可波罗 + 瑶）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "kuaigong-lache",
+      "name": "快攻拉扯流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "芈月",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 50.61,
+    "banRate": 14.58,
+    "pickRate": 6.5,
+    "winRate": 51.09,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 7.9,
+    "pickRate": 3.2,
+    "winRate": 38.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.506,
+    "ban": 0.217
+   },
+   "kplDelta": -13,
+   "comboPotential": {
+    "value": 0.2,
+    "memberships": [
+     {
+      "id": "daqiao-huicheng",
+      "name": "大乔回城流（大乔 + 李白）",
+      "priority": "B",
+      "role": "flex",
+      "slot": "李白",
+      "weight": 0.2
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "项羽",
+   "tier": "T1",
+   "tianYuan": {
+    "score": 49.71,
+    "banRate": 2.98,
+    "pickRate": 13.9,
+    "winRate": 49.9,
+    "role": "对抗路/游走(次分路)"
+   },
+   "kpl": {
+    "banRate": 1.7,
+    "pickRate": 3.9,
+    "winRate": 42.3,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.497,
+    "ban": 0.123
+   },
+   "kplDelta": -7.6,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "老夫子",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 41.61,
+    "banRate": 0.47,
+    "pickRate": 1.7,
+    "winRate": 46.87,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 7,
+    "pickRate": 3.4,
+    "winRate": 64.4,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.416,
+    "ban": 0.117
+   },
+   "kplDelta": 17.5,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "qiaofu",
+      "name": "乔夫（大乔 + 老夫子）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "亚瑟",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 39.43,
+    "banRate": 0.77,
+    "pickRate": 10.5,
+    "winRate": 49.29,
+    "role": "对抗路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.394,
+    "ban": 0.083
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "狄仁杰",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 38.99,
+    "banRate": 1.02,
+    "pickRate": 10.1,
+    "winRate": 51.48,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 8.1,
+    "pickRate": 10,
+    "winRate": 40.9,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.39,
+    "ban": 0.12
+   },
+   "kplDelta": -10.6,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "蚩奼",
+      "weight": 0.35
+     },
+     {
+      "id": "yuandi",
+      "name": "元狄（狄仁杰 + 元流之子辅助）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "达摩",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 38.67,
+    "banRate": 0.14,
+    "pickRate": 3.3,
+    "winRate": 47.4,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 2.2,
+    "pickRate": 8,
+    "winRate": 50,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.387,
+    "ban": 0.088
+   },
+   "kplDelta": 2.6,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "虞姬",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 38.48,
+    "banRate": 12.71,
+    "pickRate": 16.4,
+    "winRate": 49.89,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 3.5,
+    "pickRate": 7.7,
+    "winRate": 48,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.385,
+    "ban": 0.163
+   },
+   "kplDelta": -1.9,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "黄忠",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 37.78,
+    "banRate": 0.59,
+    "pickRate": 7.5,
+    "winRate": 53.6,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 0.2,
+    "pickRate": 0.2,
+    "winRate": 33.3,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.378,
+    "ban": 0.08
+   },
+   "kplDelta": -20.3,
+   "comboPotential": {
+    "value": 0.8,
+    "memberships": [
+     {
+      "id": "yidong-paotai",
+      "name": "移动炮台（鲁班大师 + 黄忠）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "huangzhong-zhangfei",
+      "name": "黄忠 + 张飞",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "墨子",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 37.12,
+    "banRate": 66.48,
+    "pickRate": 12.1,
+    "winRate": 51.75,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 5.2,
+    "pickRate": 4.5,
+    "winRate": 41.7,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.371,
+    "ban": 0.463
+   },
+   "kplDelta": -10,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "daoqiangpao",
+      "name": "刀枪炮",
+      "priority": "S",
+      "size": 4,
+      "role": "core"
+     },
+     {
+      "id": "moshouchenggui",
+      "name": "墨守成规（百里守约 + 墨子）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "ranked-only"
+  },
+  {
+   "hero": "鲁班七号",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 37,
+    "banRate": 1.19,
+    "pickRate": 20.7,
+    "winRate": 49.12,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 2.9,
+    "pickRate": 1.7,
+    "winRate": 47.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.37,
+    "ban": 0.094
+   },
+   "kplDelta": -1.3,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "yangzhuliu",
+      "name": "养猪流（四保一）",
+      "priority": "S",
+      "role": "flex",
+      "slot": "后羿",
+      "weight": 0.5
+     },
+     {
+      "id": "jiangwang-boshi",
+      "name": "僵王博士（鲁班七号 + 盾山）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "luban-fuzi",
+      "name": "鲁班父子（鲁班大师 + 鲁班七号）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "弈星",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 36.85,
+    "banRate": 0.89,
+    "pickRate": 2.6,
+    "winRate": 51.15,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 0.2,
+    "pickRate": 1.4,
+    "winRate": 50,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.368,
+    "ban": 0.079
+   },
+   "kplDelta": -1.1,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "李白",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 36.5,
+    "banRate": 0.51,
+    "pickRate": 5.3,
+    "winRate": 52.82,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.1,
+    "winRate": 100,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.365,
+    "ban": 0.076
+   },
+   "kplDelta": 47.2,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "daqiao-huicheng",
+      "name": "大乔回城流（大乔 + 李白）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "甄姬",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 36.47,
+    "banRate": 1.89,
+    "pickRate": 14.7,
+    "winRate": 52.98,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 2.2,
+    "pickRate": 3,
+    "winRate": 52.5,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.365,
+    "ban": 0.093
+   },
+   "kplDelta": -0.5,
+   "comboPotential": {
+    "value": 0.35,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "武则天",
+      "weight": 0.35
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "后羿",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 36.46,
+    "banRate": 1.64,
+    "pickRate": 30.2,
+    "winRate": 51.67,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 6.4,
+    "pickRate": 3.4,
+    "winRate": 51.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.365,
+    "ban": 0.111
+   },
+   "kplDelta": -0.6,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "yangzhuliu",
+      "name": "养猪流（四保一）",
+      "priority": "S",
+      "size": 4,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "大禹",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 36.45,
+    "banRate": 2.53,
+    "pickRate": 4.2,
+    "winRate": 52.71,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 1.1,
+    "pickRate": 5.1,
+    "winRate": 36.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.365,
+    "ban": 0.092
+   },
+   "kplDelta": -15.9,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "dayu-xiaohao",
+      "name": "大禹手长消耗队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "孙策",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 35.57,
+    "banRate": 0.5,
+    "pickRate": 7.6,
+    "winRate": 46.86,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 0.8,
+    "pickRate": 0.9,
+    "winRate": 58.3,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.356,
+    "ban": 0.077
+   },
+   "kplDelta": 11.4,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "铠",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 35.59,
+    "banRate": 4.98,
+    "pickRate": 9.5,
+    "winRate": 49.61,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 7.7,
+    "pickRate": 11.3,
+    "winRate": 47.7,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.356,
+    "ban": 0.133
+   },
+   "kplDelta": -1.9,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "云缨",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 35.52,
+    "banRate": 0.76,
+    "pickRate": 6,
+    "winRate": 52.75,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 7.8,
+    "pickRate": 13.2,
+    "winRate": 50,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.355,
+    "ban": 0.11
+   },
+   "kplDelta": -2.8,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "卢雅那",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 35.4,
+    "banRate": 1.34,
+    "pickRate": 6.6,
+    "winRate": 51.25,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 0.2,
+    "pickRate": 0.6,
+    "winRate": 75,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.354,
+    "ban": 0.079
+   },
+   "kplDelta": 23.8,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "赵怀真",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 35.34,
+    "banRate": 0.3,
+    "pickRate": 1.9,
+    "winRate": 47.5,
+    "role": "游走/对抗路(次分路)"
+   },
+   "kpl": {
+    "banRate": 2.1,
+    "pickRate": 4.7,
+    "winRate": 48.4,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.353,
+    "ban": 0.082
+   },
+   "kplDelta": 0.9,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "猪八戒",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 35.32,
+    "banRate": 3.52,
+    "pickRate": 7.7,
+    "winRate": 48.76,
+    "role": "对抗路/打野"
+   },
+   "kpl": {
+    "banRate": 2.3,
+    "pickRate": 4.8,
+    "winRate": 38.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.353,
+    "ban": 0.1
+   },
+   "kplDelta": -10.7,
+   "comboPotential": {
+    "value": 0.2,
+    "memberships": [
+     {
+      "id": "sunbaiyang",
+      "name": "孙白杨（孙膑 + 白起 + 杨玉环）",
+      "priority": "B",
+      "role": "flex",
+      "slot": "白起",
+      "weight": 0.2
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "典韦",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 35.05,
+    "banRate": 2.51,
+    "pickRate": 7.9,
+    "winRate": 48.29,
+    "role": "打野"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.35,
+    "ban": 0.084
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "雅典娜",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 35.03,
+    "banRate": 0.03,
+    "pickRate": 0.9,
+    "winRate": 56.45,
+    "role": "打野"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.35,
+    "ban": 0.07
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "钟馗",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 34.92,
+    "banRate": 36.93,
+    "pickRate": 10.2,
+    "winRate": 48.17,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 11.9,
+    "pickRate": 8.8,
+    "winRate": 55.6,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.349,
+    "ban": 0.327
+   },
+   "kplDelta": 7.4,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "xiaoqiao-zhongkui",
+      "name": "小乔钟馗",
+      "priority": "S",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "上官婉儿",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 34.79,
+    "banRate": 0.94,
+    "pickRate": 1.9,
+    "winRate": 49.45,
+    "role": "中路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.348,
+    "ban": 0.075
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "安琪拉",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 34.6,
+    "banRate": 10.32,
+    "pickRate": 36.7,
+    "winRate": 49.42,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 10.1,
+    "pickRate": 15.3,
+    "winRate": 48.5,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.346,
+    "ban": 0.171
+   },
+   "kplDelta": -0.9,
+   "comboPotential": {
+    "value": 0.9,
+    "memberships": [
+     {
+      "id": "xiaoqiao-zhongkui",
+      "name": "小乔钟馗",
+      "priority": "S",
+      "role": "flex",
+      "slot": "小乔",
+      "weight": 0.5
+     },
+     {
+      "id": "anqila-tuijin",
+      "name": "安琪拉推进队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "孙权",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 34.5,
+    "banRate": 4.95,
+    "pickRate": 13.1,
+    "winRate": 51.62,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 4.2,
+    "pickRate": 9.1,
+    "winRate": 49.6,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.345,
+    "ban": 0.115
+   },
+   "kplDelta": -2,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "liubang-sunquan",
+      "name": "刘邦 + 孙权",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "朵莉亚",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 34.51,
+    "banRate": 20.78,
+    "pickRate": 19.2,
+    "winRate": 47.33,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 3.1,
+    "pickRate": 6.3,
+    "winRate": 47.6,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.345,
+    "ban": 0.197
+   },
+   "kplDelta": 0.3,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "duoliyashua-laisiao",
+      "name": "朵莉亚 + 莱西奥（超长浮空）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "元流之子(坦克)",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 34.4,
+    "banRate": 1.02,
+    "pickRate": 3.1,
+    "winRate": 48,
+    "role": "游走/对抗路/打野(次分路)"
+   },
+   "kpl": {
+    "banRate": 23.1,
+    "pickRate": 17.8,
+    "winRate": 52.5,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.344,
+    "ban": 0.178
+   },
+   "kplDelta": 4.5,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "钟无艳",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 34.2,
+    "banRate": 0.38,
+    "pickRate": 4.1,
+    "winRate": 52.06,
+    "role": "对抗路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.342,
+    "ban": 0.07
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "宫本武藏",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 34.18,
+    "banRate": 8.53,
+    "pickRate": 8.8,
+    "winRate": 48.88,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 8.5,
+    "pickRate": 2.9,
+    "winRate": 53.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.342,
+    "ban": 0.154
+   },
+   "kplDelta": 4.9,
+   "comboPotential": {
+    "value": 0.35,
+    "memberships": [
+     {
+      "id": "duoliyashua-shuanda",
+      "name": "朵莉亚刷大·双边体系",
+      "priority": "A",
+      "role": "flex",
+      "slot": "铠",
+      "weight": 0.35
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "鬼谷子",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 33.98,
+    "banRate": 3.37,
+    "pickRate": 1.6,
+    "winRate": 48.1,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 0.1,
+    "pickRate": 0.2,
+    "winRate": 50,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.34,
+    "ban": 0.087
+   },
+   "kplDelta": 1.9,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "guiguzi-daqiao",
+      "name": "鬼谷子 + 大乔（强开传送）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "白起",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 33.72,
+    "banRate": 0.7,
+    "pickRate": 4.7,
+    "winRate": 53.6,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 12.5,
+    "pickRate": 7.8,
+    "winRate": 53.4,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.337,
+    "ban": 0.128
+   },
+   "kplDelta": -0.2,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "baiqi-yingzheng",
+      "name": "白起 + 嬴政（嘲讽保输出）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "sunbaiyang",
+      "name": "孙白杨（孙膑 + 白起 + 杨玉环）",
+      "priority": "B",
+      "size": 3,
+      "role": "core"
+     },
+     {
+      "id": "shuangtan-busiliu",
+      "name": "双坦不死流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "李元芳",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 33.63,
+    "banRate": 2.69,
+    "pickRate": 14.7,
+    "winRate": 51.93,
+    "role": "打野/发育路"
+   },
+   "kpl": {
+    "banRate": 0.2,
+    "pickRate": 1.4,
+    "winRate": 63.2,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.336,
+    "ban": 0.083
+   },
+   "kplDelta": 11.3,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "扁鹊",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 33.35,
+    "banRate": 0.81,
+    "pickRate": 6.8,
+    "winRate": 52.66,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 0.2,
+    "pickRate": 0.2,
+    "winRate": 0,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.334,
+    "ban": 0.072
+   },
+   "kplDelta": -52.7,
+   "comboPotential": {
+    "value": 0.2,
+    "memberships": [
+     {
+      "id": "sunbaiyang",
+      "name": "孙白杨（孙膑 + 白起 + 杨玉环）",
+      "priority": "B",
+      "role": "flex",
+      "slot": "杨玉环",
+      "weight": 0.2
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "司马懿",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 33.23,
+    "banRate": 1.36,
+    "pickRate": 3.4,
+    "winRate": 52.43,
+    "role": "打野"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.332,
+    "ban": 0.074
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0.2,
+    "memberships": [
+     {
+      "id": "daqiao-huicheng",
+      "name": "大乔回城流（大乔 + 李白）",
+      "priority": "B",
+      "role": "flex",
+      "slot": "李白",
+      "weight": 0.2
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "高渐离",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 33.21,
+    "banRate": 0.16,
+    "pickRate": 2,
+    "winRate": 49.49,
+    "role": "中路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.332,
+    "ban": 0.067
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "心魔六耳",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 33.15,
+    "banRate": 18.18,
+    "pickRate": 17.2,
+    "winRate": 51.35,
+    "role": "打野/对抗路"
+   },
+   "kpl": {
+    "banRate": 1.5,
+    "pickRate": 1.7,
+    "winRate": 39.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.331,
+    "ban": 0.173
+   },
+   "kplDelta": -12.3,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "澜",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 33.09,
+    "banRate": 3.9,
+    "pickRate": 7.9,
+    "winRate": 46.72,
+    "role": "打野"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.331,
+    "ban": 0.088
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "马可波罗",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 32.89,
+    "banRate": 5.46,
+    "pickRate": 16,
+    "winRate": 49.03,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.2,
+    "winRate": 0,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.329,
+    "ban": 0.096
+   },
+   "kplDelta": -49,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "mayao",
+      "name": "马瑶（马可波罗 + 瑶）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "梦奇",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 32.8,
+    "banRate": 0.23,
+    "pickRate": 0.5,
+    "winRate": 50.26,
+    "role": "对抗路/打野"
+   },
+   "kpl": {
+    "banRate": 2.1,
+    "pickRate": 4.4,
+    "winRate": 43.1,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.328,
+    "ban": 0.076
+   },
+   "kplDelta": -7.2,
+   "comboPotential": {
+    "value": 0.6,
+    "memberships": [
+     {
+      "id": "daixian-tuanzhan",
+      "name": "带线团战结合（边路牵制流）",
+      "priority": "B",
+      "role": "flex",
+      "slot": "暃",
+      "weight": 0.2
+     },
+     {
+      "id": "daixian-tuanzhan",
+      "name": "带线团战结合（边路牵制流）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "牛魔",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 32.84,
+    "banRate": 0.62,
+    "pickRate": 5.2,
+    "winRate": 52.66,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 0.1,
+    "pickRate": 0.8,
+    "winRate": 20,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.328,
+    "ban": 0.07
+   },
+   "kplDelta": -32.7,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "niumo-ailin",
+      "name": "牛魔 + 艾琳（双抗坦射）",
+      "priority": "B",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "蒙犽",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 32.21,
+    "banRate": 0.37,
+    "pickRate": 4.2,
+    "winRate": 51.12,
+    "role": "发育路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.322,
+    "ban": 0.066
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "元流之子(刺客)",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 32.05,
+    "banRate": 0.1,
+    "pickRate": 0.8,
+    "winRate": 48.16,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 0.4,
+    "pickRate": 0.3,
+    "winRate": 75,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.32,
+    "ban": 0.066
+   },
+   "kplDelta": 26.8,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "kuaigong-lache",
+      "name": "快攻拉扯流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "亚连",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 31.59,
+    "banRate": 0.25,
+    "pickRate": 1.5,
+    "winRate": 52.27,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 0.1,
+    "pickRate": 0.2,
+    "winRate": 100,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.316,
+    "ban": 0.065
+   },
+   "kplDelta": 47.7,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "daixian-tuanzhan",
+      "name": "带线团战结合（边路牵制流）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "曜",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 31.59,
+    "banRate": 0.14,
+    "pickRate": 2.2,
+    "winRate": 49.21,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 0.1,
+    "pickRate": 0.5,
+    "winRate": 16.7,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.316,
+    "ban": 0.064
+   },
+   "kplDelta": -32.5,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "桑启",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 31.48,
+    "banRate": 1.07,
+    "pickRate": 6.6,
+    "winRate": 52.24,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.2,
+    "winRate": 0,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.315,
+    "ban": 0.069
+   },
+   "kplDelta": -52.2,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "nailong",
+      "name": "奶龙（桑启 + 敖隐）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     },
+     {
+      "id": "daixian-tuanzhan",
+      "name": "带线团战结合（边路牵制流）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "刘禅",
+   "tier": "T2",
+   "tianYuan": {
+    "score": 30.86,
+    "banRate": 9.82,
+    "pickRate": 11.3,
+    "winRate": 51.48,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.1,
+    "winRate": 0,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.309,
+    "ban": 0.116
+   },
+   "kplDelta": -51.5,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "anqila-tuijin",
+      "name": "安琪拉推进队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "娜可露露",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 29.96,
+    "banRate": 0.06,
+    "pickRate": 2.2,
+    "winRate": 48.45,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 1.5,
+    "pickRate": 3.6,
+    "winRate": 48.9,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.3,
+    "ban": 0.067
+   },
+   "kplDelta": 0.4,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "孙膑",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 29.51,
+    "banRate": 0.78,
+    "pickRate": 5.5,
+    "winRate": 49.98,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 0.5,
+    "pickRate": 1.1,
+    "winRate": 20,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.295,
+    "ban": 0.066
+   },
+   "kplDelta": -30,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "sunbaiyang",
+      "name": "孙白杨（孙膑 + 白起 + 杨玉环）",
+      "priority": "B",
+      "size": 3,
+      "role": "core"
+     },
+     {
+      "id": "machao-aguduo-sunbin-zhouyu",
+      "name": "马超 + 阿古朵 + 孙膑 + 周瑜（KPL 联动）",
+      "priority": "B",
+      "size": 4,
+      "role": "core"
+     },
+     {
+      "id": "shuangtan-busiliu",
+      "name": "双坦不死流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "刘备",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 29.29,
+    "banRate": 3.5,
+    "pickRate": 7.7,
+    "winRate": 54.02,
+    "role": "打野"
+   },
+   "kpl": {
+    "banRate": 0.1,
+    "pickRate": 0,
+    "winRate": null,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.293,
+    "ban": 0.078
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0.4,
+    "memberships": [
+     {
+      "id": "anqila-tuijin",
+      "name": "安琪拉推进队（S45）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "嬴政",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 27.49,
+    "banRate": 0.17,
+    "pickRate": 4.1,
+    "winRate": 52.91,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 6.3,
+    "pickRate": 10.1,
+    "winRate": 48.5,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.275,
+    "ban": 0.084
+   },
+   "kplDelta": -4.4,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "baiqi-yingzheng",
+      "name": "白起 + 嬴政（嘲讽保输出）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "吕布",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 27.27,
+    "banRate": 7.53,
+    "pickRate": 18.3,
+    "winRate": 48.72,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 4.5,
+    "pickRate": 3,
+    "winRate": 60,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.273,
+    "ban": 0.116
+   },
+   "kplDelta": 11.3,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "廉颇",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 27.27,
+    "banRate": 5.46,
+    "pickRate": 8.7,
+    "winRate": 51.82,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 1.1,
+    "pickRate": 3.5,
+    "winRate": 47.8,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.273,
+    "ban": 0.09
+   },
+   "kplDelta": -4,
+   "comboPotential": {
+    "value": 0.8,
+    "memberships": [
+     {
+      "id": "kuaigong-lache",
+      "name": "快攻拉扯流",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     },
+     {
+      "id": "kpl-jingdian-junheng",
+      "name": "KPL 经典均衡（廉颇+镜+不知火舞+公孙离+大乔）",
+      "priority": "B",
+      "size": 5,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "干将莫邪",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 26.82,
+    "banRate": 2.36,
+    "pickRate": 5.9,
+    "winRate": 51.54,
+    "role": "中路/发育路(次分路)"
+   },
+   "kpl": {
+    "banRate": 0.2,
+    "pickRate": 0.7,
+    "winRate": 44.4,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.268,
+    "ban": 0.068
+   },
+   "kplDelta": -7.1,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "张良",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 26.14,
+    "banRate": 35.89,
+    "pickRate": 6.4,
+    "winRate": 51.55,
+    "role": "游走/中路"
+   },
+   "kpl": {
+    "banRate": 7.1,
+    "pickRate": 6.7,
+    "winRate": 46.6,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.261,
+    "ban": 0.282
+   },
+   "kplDelta": -4.9,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "yangzhuliu",
+      "name": "养猪流（四保一）",
+      "priority": "S",
+      "role": "flex",
+      "slot": "刘邦",
+      "weight": 0.5
+     },
+     {
+      "id": "donghuang-zhangliang",
+      "name": "东皇太一 + 张良（双压制）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "盘古",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 24.12,
+    "banRate": 6.04,
+    "pickRate": 3,
+    "winRate": 47.89,
+    "role": "打野/对抗路"
+   },
+   "kpl": {
+    "banRate": 0.1,
+    "pickRate": 0,
+    "winRate": null,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.241,
+    "ban": 0.082
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "周瑜",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 22.1,
+    "banRate": 0.18,
+    "pickRate": 2.8,
+    "winRate": 51.44,
+    "role": "中路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.221,
+    "ban": 0.045
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0.6,
+    "memberships": [
+     {
+      "id": "shuangtan-busiliu",
+      "name": "双坦不死流",
+      "priority": "B",
+      "role": "flex",
+      "slot": "海月",
+      "weight": 0.2
+     },
+     {
+      "id": "machao-aguduo-sunbin-zhouyu",
+      "name": "马超 + 阿古朵 + 孙膑 + 周瑜（KPL 联动）",
+      "priority": "B",
+      "size": 4,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "伽罗",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 21.88,
+    "banRate": 4.53,
+    "pickRate": 12.2,
+    "winRate": 54.15,
+    "role": "发育路"
+   },
+   "kpl": {
+    "banRate": 0.1,
+    "pickRate": 0.2,
+    "winRate": 66.7,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.219,
+    "ban": 0.069
+   },
+   "kplDelta": 12.6,
+   "comboPotential": {
+    "value": 0.5,
+    "memberships": [
+     {
+      "id": "yangzhuliu",
+      "name": "养猪流（四保一）",
+      "priority": "S",
+      "role": "flex",
+      "slot": "后羿",
+      "weight": 0.5
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "东皇太一",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 20.53,
+    "banRate": 35.05,
+    "pickRate": 8.1,
+    "winRate": 49.03,
+    "role": "游走/对抗路(次分路)"
+   },
+   "kpl": {
+    "banRate": 1.1,
+    "pickRate": 1.1,
+    "winRate": 50,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.205,
+    "ban": 0.239
+   },
+   "kplDelta": 1,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "donghuang-zhangliang",
+      "name": "东皇太一 + 张良（双压制）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "蔡文姬",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 19.86,
+    "banRate": 30.84,
+    "pickRate": 15.2,
+    "winRate": 51.66,
+    "role": "游走"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.199,
+    "ban": 0.209
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0.35,
+    "memberships": [
+     {
+      "id": "nailong",
+      "name": "奶龙（桑启 + 敖隐）",
+      "priority": "A",
+      "role": "flex",
+      "slot": "桑启",
+      "weight": 0.35
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "兰陵王",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 19.18,
+    "banRate": 6.68,
+    "pickRate": 4.6,
+    "winRate": 48.51,
+    "role": "打野/对抗路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.192,
+    "ban": 0.075
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "王昭君",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 18.51,
+    "banRate": 15.26,
+    "pickRate": 19.5,
+    "winRate": 50.86,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 3.9,
+    "pickRate": 7.6,
+    "winRate": 52,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.185,
+    "ban": 0.139
+   },
+   "kplDelta": 1.1,
+   "comboPotential": {
+    "value": 0.5,
+    "memberships": [
+     {
+      "id": "xiaoqiao-zhongkui",
+      "name": "小乔钟馗",
+      "priority": "S",
+      "role": "flex",
+      "slot": "小乔",
+      "weight": 0.5
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "阿轲",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 17.84,
+    "banRate": 2.01,
+    "pickRate": 5.2,
+    "winRate": 50.78,
+    "role": "打野"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.178,
+    "ban": 0.047
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "云中君",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 17.61,
+    "banRate": 0.04,
+    "pickRate": 1,
+    "winRate": 52.61,
+    "role": "打野"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.176,
+    "ban": 0.035
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "妲己",
+   "tier": "T3",
+   "tianYuan": {
+    "score": 17.16,
+    "banRate": 14.15,
+    "pickRate": 34.6,
+    "winRate": 49.99,
+    "role": "中路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.172,
+    "ban": 0.112
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0.5,
+    "memberships": [
+     {
+      "id": "xiaoqiao-zhongkui",
+      "name": "小乔钟馗",
+      "priority": "S",
+      "role": "flex",
+      "slot": "小乔",
+      "weight": 0.5
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "程咬金",
+   "tier": "T4",
+   "tianYuan": {
+    "score": 14.02,
+    "banRate": 1.32,
+    "pickRate": 5.6,
+    "winRate": 50.33,
+    "role": "对抗路"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.1,
+    "winRate": 0,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.14,
+    "ban": 0.035
+   },
+   "kplDelta": -50.3,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "元流之子(法师)",
+   "tier": "T4",
+   "tianYuan": {
+    "score": 11.33,
+    "banRate": 0.18,
+    "pickRate": 1.7,
+    "winRate": 54.63,
+    "role": "中路"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.2,
+    "winRate": 0,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.113,
+    "ban": 0.024
+   },
+   "kplDelta": -54.6,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "米莱狄",
+   "tier": "T4",
+   "tianYuan": {
+    "score": 5.49,
+    "banRate": 30.21,
+    "pickRate": 9.8,
+    "winRate": 47.56,
+    "role": "中路"
+   },
+   "kpl": null,
+   "score": {
+    "solo": 0.055,
+    "ban": 0.177
+   },
+   "kplDelta": null,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "金蝉",
+   "tier": "T4",
+   "tianYuan": {
+    "score": 5.04,
+    "banRate": 38.77,
+    "pickRate": 8,
+    "winRate": 49.35,
+    "role": "中路/游走(次分路)"
+   },
+   "kpl": {
+    "banRate": 0.2,
+    "pickRate": 0.8,
+    "winRate": 20,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.05,
+    "ban": 0.224
+   },
+   "kplDelta": -29.4,
+   "comboPotential": {
+    "value": 0,
+    "memberships": [],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "mixed"
+  },
+  {
+   "hero": "姜子牙",
+   "tier": "T4",
+   "tianYuan": {
+    "score": 2.35,
+    "banRate": 8.22,
+    "pickRate": 12,
+    "winRate": 50.64,
+    "role": "中路/游走(次分路)"
+   },
+   "kpl": {
+    "banRate": 2.4,
+    "pickRate": 6.5,
+    "winRate": 54.7,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.024,
+    "ban": 0.061
+   },
+   "kplDelta": 4.1,
+   "comboPotential": {
+    "value": 0.7,
+    "memberships": [
+     {
+      "id": "dangong",
+      "name": "弹弓（姜子牙 + 鲁班大师）",
+      "priority": "A",
+      "size": 2,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  },
+  {
+   "hero": "庄周",
+   "tier": "T4",
+   "tianYuan": {
+    "score": 1,
+    "banRate": 52.27,
+    "pickRate": 6.5,
+    "winRate": 51.94,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 2.1,
+    "pickRate": 1.7,
+    "winRate": 56.5,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0.01,
+    "ban": 0.299
+   },
+   "kplDelta": 4.6,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "yangzhuliu",
+      "name": "养猪流（四保一）",
+      "priority": "S",
+      "size": 4,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "ranked-only"
+  },
+  {
+   "hero": "明世隐",
+   "tier": "T4",
+   "tianYuan": {
+    "score": 0,
+    "banRate": 1.6,
+    "pickRate": 5.2,
+    "winRate": 48.6,
+    "role": "游走"
+   },
+   "kpl": {
+    "banRate": 0,
+    "pickRate": 0.1,
+    "winRate": 0,
+    "sample": 1323
+   },
+   "score": {
+    "solo": 0,
+    "ban": 0.009
+   },
+   "kplDelta": -48.6,
+   "comboPotential": {
+    "value": 1,
+    "memberships": [
+     {
+      "id": "yangzhuliu",
+      "name": "养猪流（四保一）",
+      "priority": "S",
+      "size": 4,
+      "role": "core"
+     }
+    ],
+    "hint": "仅提示：组合大成由引擎在成型时结算，不进单卡排序"
+   },
+   "regime": "low"
+  }
+ ]
+}

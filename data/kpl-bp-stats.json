@@ -1,0 +1,1581 @@
+{
+ "source": "data/kpl-bp-2026-final.json",
+ "battles": 1323,
+ "fetched_at": "2026-10-24T11:28:47.299Z",
+ "positioning": "integrated-reference",
+ "priority_note": "与天元并列参与三方整合（见 data/integration-v1.json，由 tools/integrate-data.mjs 生成）：天元 ban 率与 KPL ban 率都作参考，融合权重 55/45；组合知识（combos.json）权重最高。KPL 与排位环境不同（教练 BP、针对性 ban、执行度），故按用途分工而非互相覆盖。",
+ "heroes": [
+  {
+   "hero": "鲁班大师",
+   "tier": "T0",
+   "ban": 1058,
+   "pick": 218,
+   "win": 123,
+   "pickRate": 16.5,
+   "banRate": 80,
+   "winRate": 56.4
+  },
+  {
+   "hero": "盾山",
+   "tier": "T0",
+   "ban": 893,
+   "pick": 281,
+   "win": 152,
+   "pickRate": 21.2,
+   "banRate": 67.5,
+   "winRate": 54.1
+  },
+  {
+   "hero": "敖隐",
+   "tier": "T0",
+   "ban": 463,
+   "pick": 438,
+   "win": 215,
+   "pickRate": 33.1,
+   "banRate": 35,
+   "winRate": 49.1
+  },
+  {
+   "hero": "关羽",
+   "tier": "T0",
+   "ban": 620,
+   "pick": 279,
+   "win": 161,
+   "pickRate": 21.1,
+   "banRate": 46.9,
+   "winRate": 57.7
+  },
+  {
+   "hero": "沈梦溪",
+   "tier": "T0.5",
+   "ban": 414,
+   "pick": 447,
+   "win": 227,
+   "pickRate": 33.8,
+   "banRate": 31.3,
+   "winRate": 50.8
+  },
+  {
+   "hero": "海月",
+   "tier": "T0",
+   "ban": 543,
+   "pick": 261,
+   "win": 130,
+   "pickRate": 19.7,
+   "banRate": 41,
+   "winRate": 49.8
+  },
+  {
+   "hero": "苏烈",
+   "tier": "T0.5",
+   "ban": 324,
+   "pick": 423,
+   "win": 211,
+   "pickRate": 32,
+   "banRate": 24.5,
+   "winRate": 49.9
+  },
+  {
+   "hero": "狂铁",
+   "tier": "T1",
+   "ban": 309,
+   "pick": 432,
+   "win": 225,
+   "pickRate": 32.7,
+   "banRate": 23.4,
+   "winRate": 52.1
+  },
+  {
+   "hero": "大司命",
+   "tier": "T1",
+   "ban": 436,
+   "pick": 283,
+   "win": 135,
+   "pickRate": 21.4,
+   "banRate": 33,
+   "winRate": 47.7
+  },
+  {
+   "hero": "戈娅",
+   "tier": "T1",
+   "ban": 159,
+   "pick": 446,
+   "win": 250,
+   "pickRate": 33.7,
+   "banRate": 12,
+   "winRate": 56.1
+  },
+  {
+   "hero": "夏洛特",
+   "tier": "T1",
+   "ban": 189,
+   "pick": 416,
+   "win": 192,
+   "pickRate": 31.4,
+   "banRate": 14.3,
+   "winRate": 46.2
+  },
+  {
+   "hero": "元流之子(坦克)",
+   "tier": "T2",
+   "ban": 306,
+   "pick": 236,
+   "win": 124,
+   "pickRate": 17.8,
+   "banRate": 23.1,
+   "winRate": 52.5
+  },
+  {
+   "hero": "小乔",
+   "tier": "T1",
+   "ban": 188,
+   "pick": 348,
+   "win": 178,
+   "pickRate": 26.3,
+   "banRate": 14.2,
+   "winRate": 51.1
+  },
+  {
+   "hero": "司空震",
+   "tier": "T1",
+   "ban": 256,
+   "pick": 262,
+   "win": 118,
+   "pickRate": 19.8,
+   "banRate": 19.3,
+   "winRate": 45
+  },
+  {
+   "hero": "镜",
+   "tier": "T0",
+   "ban": 345,
+   "pick": 169,
+   "win": 88,
+   "pickRate": 12.8,
+   "banRate": 26.1,
+   "winRate": 52.1
+  },
+  {
+   "hero": "少司缘",
+   "tier": "T0",
+   "ban": 156,
+   "pick": 350,
+   "win": 165,
+   "pickRate": 26.5,
+   "banRate": 11.8,
+   "winRate": 47.1
+  },
+  {
+   "hero": "杨戬",
+   "tier": "T1",
+   "ban": 284,
+   "pick": 222,
+   "win": 113,
+   "pickRate": 16.8,
+   "banRate": 21.5,
+   "winRate": 50.9
+  },
+  {
+   "hero": "张飞",
+   "tier": "T1",
+   "ban": 148,
+   "pick": 356,
+   "win": 184,
+   "pickRate": 26.9,
+   "banRate": 11.2,
+   "winRate": 51.7
+  },
+  {
+   "hero": "武则天",
+   "tier": "T1",
+   "ban": 188,
+   "pick": 301,
+   "win": 147,
+   "pickRate": 22.8,
+   "banRate": 14.2,
+   "winRate": 48.8
+  },
+  {
+   "hero": "不知火舞",
+   "tier": "T1",
+   "ban": 284,
+   "pick": 193,
+   "win": 97,
+   "pickRate": 14.6,
+   "banRate": 21.5,
+   "winRate": 50.3
+  },
+  {
+   "hero": "蚩奼",
+   "tier": "T1",
+   "ban": 210,
+   "pick": 263,
+   "win": 123,
+   "pickRate": 19.9,
+   "banRate": 15.9,
+   "winRate": 46.8
+  },
+  {
+   "hero": "阿古朵",
+   "tier": "T1",
+   "ban": 299,
+   "pick": 160,
+   "win": 75,
+   "pickRate": 12.1,
+   "banRate": 22.6,
+   "winRate": 46.9
+  },
+  {
+   "hero": "曹操",
+   "tier": "T1",
+   "ban": 128,
+   "pick": 321,
+   "win": 170,
+   "pickRate": 24.3,
+   "banRate": 9.7,
+   "winRate": 53
+  },
+  {
+   "hero": "马超",
+   "tier": "T0",
+   "ban": 215,
+   "pick": 233,
+   "win": 102,
+   "pickRate": 17.6,
+   "banRate": 16.3,
+   "winRate": 43.8
+  },
+  {
+   "hero": "哪吒",
+   "tier": "T1",
+   "ban": 317,
+   "pick": 110,
+   "win": 54,
+   "pickRate": 8.3,
+   "banRate": 24,
+   "winRate": 49.1
+  },
+  {
+   "hero": "女娲",
+   "tier": "T0.5",
+   "ban": 206,
+   "pick": 213,
+   "win": 113,
+   "pickRate": 16.1,
+   "banRate": 15.6,
+   "winRate": 53.1
+  },
+  {
+   "hero": "橘右京",
+   "tier": "T1",
+   "ban": 199,
+   "pick": 218,
+   "win": 120,
+   "pickRate": 16.5,
+   "banRate": 15,
+   "winRate": 55
+  },
+  {
+   "hero": "苍",
+   "tier": "T1",
+   "ban": 81,
+   "pick": 303,
+   "win": 149,
+   "pickRate": 22.9,
+   "banRate": 6.1,
+   "winRate": 49.2
+  },
+  {
+   "hero": "裴擒虎",
+   "tier": "T0",
+   "ban": 192,
+   "pick": 188,
+   "win": 91,
+   "pickRate": 14.2,
+   "banRate": 14.5,
+   "winRate": 48.4
+  },
+  {
+   "hero": "公孙离",
+   "tier": "T1",
+   "ban": 134,
+   "pick": 240,
+   "win": 118,
+   "pickRate": 18.1,
+   "banRate": 10.1,
+   "winRate": 49.2
+  },
+  {
+   "hero": "元流之子(辅助)",
+   "tier": "T0",
+   "ban": 309,
+   "pick": 65,
+   "win": 31,
+   "pickRate": 4.9,
+   "banRate": 23.4,
+   "winRate": 47.7
+  },
+  {
+   "hero": "夏侯惇",
+   "tier": "T1",
+   "ban": 149,
+   "pick": 209,
+   "win": 101,
+   "pickRate": 15.8,
+   "banRate": 11.3,
+   "winRate": 48.3
+  },
+  {
+   "hero": "安琪拉",
+   "tier": "T2",
+   "ban": 133,
+   "pick": 202,
+   "win": 98,
+   "pickRate": 15.3,
+   "banRate": 10.1,
+   "winRate": 48.5
+  },
+  {
+   "hero": "艾琳",
+   "tier": "T1",
+   "ban": 63,
+   "pick": 269,
+   "win": 146,
+   "pickRate": 20.3,
+   "banRate": 4.8,
+   "winRate": 54.3
+  },
+  {
+   "hero": "赵云",
+   "tier": "T0.5",
+   "ban": 138,
+   "pick": 179,
+   "win": 106,
+   "pickRate": 13.5,
+   "banRate": 10.4,
+   "winRate": 59.2
+  },
+  {
+   "hero": "空空儿",
+   "tier": "T1",
+   "ban": 195,
+   "pick": 120,
+   "win": 58,
+   "pickRate": 9.1,
+   "banRate": 14.7,
+   "winRate": 48.3
+  },
+  {
+   "hero": "太乙真人",
+   "tier": "T1",
+   "ban": 76,
+   "pick": 216,
+   "win": 111,
+   "pickRate": 16.3,
+   "banRate": 5.7,
+   "winRate": 51.4
+  },
+  {
+   "hero": "云缨",
+   "tier": "T2",
+   "ban": 103,
+   "pick": 174,
+   "win": 87,
+   "pickRate": 13.2,
+   "banRate": 7.8,
+   "winRate": 50
+  },
+  {
+   "hero": "钟馗",
+   "tier": "T2",
+   "ban": 157,
+   "pick": 117,
+   "win": 65,
+   "pickRate": 8.8,
+   "banRate": 11.9,
+   "winRate": 55.6
+  },
+  {
+   "hero": "蒙恬",
+   "tier": "T1",
+   "ban": 152,
+   "pick": 117,
+   "win": 65,
+   "pickRate": 8.8,
+   "banRate": 11.5,
+   "winRate": 55.6
+  },
+  {
+   "hero": "白起",
+   "tier": "T2",
+   "ban": 166,
+   "pick": 103,
+   "win": 55,
+   "pickRate": 7.8,
+   "banRate": 12.5,
+   "winRate": 53.4
+  },
+  {
+   "hero": "铠",
+   "tier": "T2",
+   "ban": 102,
+   "pick": 149,
+   "win": 71,
+   "pickRate": 11.3,
+   "banRate": 7.7,
+   "winRate": 47.7
+  },
+  {
+   "hero": "狄仁杰",
+   "tier": "T2",
+   "ban": 107,
+   "pick": 132,
+   "win": 54,
+   "pickRate": 10,
+   "banRate": 8.1,
+   "winRate": 40.9
+  },
+  {
+   "hero": "嬴政",
+   "tier": "T3",
+   "ban": 83,
+   "pick": 134,
+   "win": 65,
+   "pickRate": 10.1,
+   "banRate": 6.3,
+   "winRate": 48.5
+  },
+  {
+   "hero": "张良",
+   "tier": "T3",
+   "ban": 94,
+   "pick": 88,
+   "win": 41,
+   "pickRate": 6.7,
+   "banRate": 7.1,
+   "winRate": 46.6
+  },
+  {
+   "hero": "西施",
+   "tier": "T1",
+   "ban": 103,
+   "pick": 74,
+   "win": 29,
+   "pickRate": 5.6,
+   "banRate": 7.8,
+   "winRate": 39.2
+  },
+  {
+   "hero": "影",
+   "tier": "T1",
+   "ban": 43,
+   "pick": 133,
+   "win": 60,
+   "pickRate": 10.1,
+   "banRate": 3.3,
+   "winRate": 45.1
+  },
+  {
+   "hero": "孙权",
+   "tier": "T2",
+   "ban": 55,
+   "pick": 121,
+   "win": 60,
+   "pickRate": 9.1,
+   "banRate": 4.2,
+   "winRate": 49.6
+  },
+  {
+   "hero": "宫本武藏",
+   "tier": "T2",
+   "ban": 113,
+   "pick": 39,
+   "win": 21,
+   "pickRate": 2.9,
+   "banRate": 8.5,
+   "winRate": 53.8
+  },
+  {
+   "hero": "王昭君",
+   "tier": "T3",
+   "ban": 51,
+   "pick": 100,
+   "win": 52,
+   "pickRate": 7.6,
+   "banRate": 3.9,
+   "winRate": 52
+  },
+  {
+   "hero": "虞姬",
+   "tier": "T2",
+   "ban": 46,
+   "pick": 102,
+   "win": 49,
+   "pickRate": 7.7,
+   "banRate": 3.5,
+   "winRate": 48
+  },
+  {
+   "hero": "芈月",
+   "tier": "T1",
+   "ban": 104,
+   "pick": 42,
+   "win": 16,
+   "pickRate": 3.2,
+   "banRate": 7.9,
+   "winRate": 38.1
+  },
+  {
+   "hero": "老夫子",
+   "tier": "T2",
+   "ban": 93,
+   "pick": 45,
+   "win": 29,
+   "pickRate": 3.4,
+   "banRate": 7,
+   "winRate": 64.4
+  },
+  {
+   "hero": "达摩",
+   "tier": "T2",
+   "ban": 29,
+   "pick": 106,
+   "win": 53,
+   "pickRate": 8,
+   "banRate": 2.2,
+   "winRate": 50
+  },
+  {
+   "hero": "百里守约",
+   "tier": "T1",
+   "ban": 45,
+   "pick": 86,
+   "win": 38,
+   "pickRate": 6.5,
+   "banRate": 3.4,
+   "winRate": 44.2
+  },
+  {
+   "hero": "后羿",
+   "tier": "T2",
+   "ban": 85,
+   "pick": 45,
+   "win": 23,
+   "pickRate": 3.4,
+   "banRate": 6.4,
+   "winRate": 51.1
+  },
+  {
+   "hero": "墨子",
+   "tier": "T2",
+   "ban": 69,
+   "pick": 60,
+   "win": 25,
+   "pickRate": 4.5,
+   "banRate": 5.2,
+   "winRate": 41.7
+  },
+  {
+   "hero": "朵莉亚",
+   "tier": "T2",
+   "ban": 41,
+   "pick": 84,
+   "win": 40,
+   "pickRate": 6.3,
+   "banRate": 3.1,
+   "winRate": 47.6
+  },
+  {
+   "hero": "嫦娥",
+   "tier": "T0.5",
+   "ban": 37,
+   "pick": 86,
+   "win": 46,
+   "pickRate": 6.5,
+   "banRate": 2.8,
+   "winRate": 53.5
+  },
+  {
+   "hero": "孙尚香",
+   "tier": "T1",
+   "ban": 18,
+   "pick": 102,
+   "win": 47,
+   "pickRate": 7.7,
+   "banRate": 1.4,
+   "winRate": 46.1
+  },
+  {
+   "hero": "姜子牙",
+   "tier": "T4",
+   "ban": 32,
+   "pick": 86,
+   "win": 47,
+   "pickRate": 6.5,
+   "banRate": 2.4,
+   "winRate": 54.7
+  },
+  {
+   "hero": "暃",
+   "tier": "T1",
+   "ban": 52,
+   "pick": 59,
+   "win": 30,
+   "pickRate": 4.5,
+   "banRate": 3.9,
+   "winRate": 50.8
+  },
+  {
+   "hero": "吕布",
+   "tier": "T3",
+   "ban": 60,
+   "pick": 40,
+   "win": 24,
+   "pickRate": 3,
+   "banRate": 4.5,
+   "winRate": 60
+  },
+  {
+   "hero": "猪八戒",
+   "tier": "T2",
+   "ban": 31,
+   "pick": 63,
+   "win": 24,
+   "pickRate": 4.8,
+   "banRate": 2.3,
+   "winRate": 38.1
+  },
+  {
+   "hero": "赵怀真",
+   "tier": "T2",
+   "ban": 28,
+   "pick": 62,
+   "win": 30,
+   "pickRate": 4.7,
+   "banRate": 2.1,
+   "winRate": 48.4
+  },
+  {
+   "hero": "梦奇",
+   "tier": "T2",
+   "ban": 28,
+   "pick": 58,
+   "win": 25,
+   "pickRate": 4.4,
+   "banRate": 2.1,
+   "winRate": 43.1
+  },
+  {
+   "hero": "大禹",
+   "tier": "T2",
+   "ban": 15,
+   "pick": 68,
+   "win": 25,
+   "pickRate": 5.1,
+   "banRate": 1.1,
+   "winRate": 36.8
+  },
+  {
+   "hero": "海诺",
+   "tier": "T1",
+   "ban": 32,
+   "pick": 44,
+   "win": 19,
+   "pickRate": 3.3,
+   "banRate": 2.4,
+   "winRate": 43.2
+  },
+  {
+   "hero": "项羽",
+   "tier": "T1",
+   "ban": 22,
+   "pick": 52,
+   "win": 22,
+   "pickRate": 3.9,
+   "banRate": 1.7,
+   "winRate": 42.3
+  },
+  {
+   "hero": "杨玉环",
+   "tier": "T1",
+   "ban": 10,
+   "pick": 62,
+   "win": 30,
+   "pickRate": 4.7,
+   "banRate": 0.8,
+   "winRate": 48.4
+  },
+  {
+   "hero": "甄姬",
+   "tier": "T2",
+   "ban": 29,
+   "pick": 40,
+   "win": 21,
+   "pickRate": 3,
+   "banRate": 2.2,
+   "winRate": 52.5
+  },
+  {
+   "hero": "娜可露露",
+   "tier": "T3",
+   "ban": 20,
+   "pick": 47,
+   "win": 23,
+   "pickRate": 3.6,
+   "banRate": 1.5,
+   "winRate": 48.9
+  },
+  {
+   "hero": "鲁班七号",
+   "tier": "T2",
+   "ban": 39,
+   "pick": 23,
+   "win": 11,
+   "pickRate": 1.7,
+   "banRate": 2.9,
+   "winRate": 47.8
+  },
+  {
+   "hero": "元流之子(射手)",
+   "tier": "T0.5",
+   "ban": 28,
+   "pick": 34,
+   "win": 11,
+   "pickRate": 2.6,
+   "banRate": 2.1,
+   "winRate": 32.4
+  },
+  {
+   "hero": "廉颇",
+   "tier": "T3",
+   "ban": 14,
+   "pick": 46,
+   "win": 22,
+   "pickRate": 3.5,
+   "banRate": 1.1,
+   "winRate": 47.8
+  },
+  {
+   "hero": "庄周",
+   "tier": "T4",
+   "ban": 28,
+   "pick": 23,
+   "win": 13,
+   "pickRate": 1.7,
+   "banRate": 2.1,
+   "winRate": 56.5
+  },
+  {
+   "hero": "心魔六耳",
+   "tier": "T2",
+   "ban": 20,
+   "pick": 23,
+   "win": 9,
+   "pickRate": 1.7,
+   "banRate": 1.5,
+   "winRate": 39.1
+  },
+  {
+   "hero": "大乔",
+   "tier": "T0",
+   "ban": 16,
+   "pick": 22,
+   "win": 13,
+   "pickRate": 1.7,
+   "banRate": 1.2,
+   "winRate": 59.1
+  },
+  {
+   "hero": "莱西奥",
+   "tier": "T1",
+   "ban": 4,
+   "pick": 27,
+   "win": 13,
+   "pickRate": 2,
+   "banRate": 0.3,
+   "winRate": 48.1
+  },
+  {
+   "hero": "东皇太一",
+   "tier": "T3",
+   "ban": 15,
+   "pick": 14,
+   "win": 7,
+   "pickRate": 1.1,
+   "banRate": 1.1,
+   "winRate": 50
+  },
+  {
+   "hero": "李元芳",
+   "tier": "T2",
+   "ban": 3,
+   "pick": 19,
+   "win": 12,
+   "pickRate": 1.4,
+   "banRate": 0.2,
+   "winRate": 63.2
+  },
+  {
+   "hero": "孙策",
+   "tier": "T2",
+   "ban": 10,
+   "pick": 12,
+   "win": 7,
+   "pickRate": 0.9,
+   "banRate": 0.8,
+   "winRate": 58.3
+  },
+  {
+   "hero": "弈星",
+   "tier": "T2",
+   "ban": 3,
+   "pick": 18,
+   "win": 9,
+   "pickRate": 1.4,
+   "banRate": 0.2,
+   "winRate": 50
+  },
+  {
+   "hero": "孙膑",
+   "tier": "T3",
+   "ban": 6,
+   "pick": 15,
+   "win": 3,
+   "pickRate": 1.1,
+   "banRate": 0.5,
+   "winRate": 20
+  },
+  {
+   "hero": "姬小满",
+   "tier": "T1",
+   "ban": 1,
+   "pick": 17,
+   "win": 9,
+   "pickRate": 1.3,
+   "banRate": 0.1,
+   "winRate": 52.9
+  },
+  {
+   "hero": "露娜",
+   "tier": "T1",
+   "ban": 4,
+   "pick": 10,
+   "win": 4,
+   "pickRate": 0.8,
+   "banRate": 0.3,
+   "winRate": 40
+  },
+  {
+   "hero": "元歌",
+   "tier": "T0.5",
+   "ban": 4,
+   "pick": 10,
+   "win": 4,
+   "pickRate": 0.8,
+   "banRate": 0.3,
+   "winRate": 40
+  },
+  {
+   "hero": "金蝉",
+   "tier": "T4",
+   "ban": 3,
+   "pick": 10,
+   "win": 2,
+   "pickRate": 0.8,
+   "banRate": 0.2,
+   "winRate": 20
+  },
+  {
+   "hero": "干将莫邪",
+   "tier": "T3",
+   "ban": 2,
+   "pick": 9,
+   "win": 4,
+   "pickRate": 0.7,
+   "banRate": 0.2,
+   "winRate": 44.4
+  },
+  {
+   "hero": "牛魔",
+   "tier": "T2",
+   "ban": 1,
+   "pick": 10,
+   "win": 2,
+   "pickRate": 0.8,
+   "banRate": 0.1,
+   "winRate": 20
+  },
+  {
+   "hero": "卢雅那",
+   "tier": "T2",
+   "ban": 3,
+   "pick": 8,
+   "win": 6,
+   "pickRate": 0.6,
+   "banRate": 0.2,
+   "winRate": 75
+  },
+  {
+   "hero": "元流之子(刺客)",
+   "tier": "T2",
+   "ban": 5,
+   "pick": 4,
+   "win": 3,
+   "pickRate": 0.3,
+   "banRate": 0.4,
+   "winRate": 75
+  },
+  {
+   "hero": "刘邦",
+   "tier": "T1",
+   "ban": 1,
+   "pick": 7,
+   "win": 2,
+   "pickRate": 0.5,
+   "banRate": 0.1,
+   "winRate": 28.6
+  },
+  {
+   "hero": "曜",
+   "tier": "T2",
+   "ban": 1,
+   "pick": 6,
+   "win": 1,
+   "pickRate": 0.5,
+   "banRate": 0.1,
+   "winRate": 16.7
+  },
+  {
+   "hero": "李信",
+   "tier": "T1",
+   "ban": 2,
+   "pick": 4,
+   "win": 2,
+   "pickRate": 0.3,
+   "banRate": 0.2,
+   "winRate": 50
+  },
+  {
+   "hero": "扁鹊",
+   "tier": "T2",
+   "ban": 3,
+   "pick": 2,
+   "win": 0,
+   "pickRate": 0.2,
+   "banRate": 0.2,
+   "winRate": 0
+  },
+  {
+   "hero": "黄忠",
+   "tier": "T2",
+   "ban": 2,
+   "pick": 3,
+   "win": 1,
+   "pickRate": 0.2,
+   "banRate": 0.2,
+   "winRate": 33.3
+  },
+  {
+   "hero": "韩信",
+   "tier": "T1",
+   "ban": 0,
+   "pick": 4,
+   "win": 1,
+   "pickRate": 0.3,
+   "banRate": 0,
+   "winRate": 25
+  },
+  {
+   "hero": "伽罗",
+   "tier": "T3",
+   "ban": 1,
+   "pick": 3,
+   "win": 2,
+   "pickRate": 0.2,
+   "banRate": 0.1,
+   "winRate": 66.7
+  },
+  {
+   "hero": "亚连",
+   "tier": "T2",
+   "ban": 1,
+   "pick": 3,
+   "win": 3,
+   "pickRate": 0.2,
+   "banRate": 0.1,
+   "winRate": 100
+  },
+  {
+   "hero": "",
+   "tier": "?",
+   "ban": 4,
+   "pick": 0,
+   "win": 0,
+   "pickRate": 0,
+   "banRate": 0.3,
+   "winRate": null
+  },
+  {
+   "hero": "马可波罗",
+   "tier": "T2",
+   "ban": 0,
+   "pick": 3,
+   "win": 0,
+   "pickRate": 0.2,
+   "banRate": 0,
+   "winRate": 0
+  },
+  {
+   "hero": "鬼谷子",
+   "tier": "T2",
+   "ban": 1,
+   "pick": 2,
+   "win": 1,
+   "pickRate": 0.2,
+   "banRate": 0.1,
+   "winRate": 50
+  },
+  {
+   "hero": "元流之子(法师)",
+   "tier": "T4",
+   "ban": 0,
+   "pick": 3,
+   "win": 0,
+   "pickRate": 0.2,
+   "banRate": 0,
+   "winRate": 0
+  },
+  {
+   "hero": "诸葛亮",
+   "tier": "T1",
+   "ban": 0,
+   "pick": 2,
+   "win": 2,
+   "pickRate": 0.2,
+   "banRate": 0,
+   "winRate": 100
+  },
+  {
+   "hero": "桑启",
+   "tier": "T2",
+   "ban": 0,
+   "pick": 2,
+   "win": 0,
+   "pickRate": 0.2,
+   "banRate": 0,
+   "winRate": 0
+  },
+  {
+   "hero": "盘古",
+   "tier": "T3",
+   "ban": 1,
+   "pick": 0,
+   "win": 0,
+   "pickRate": 0,
+   "banRate": 0.1,
+   "winRate": null
+  },
+  {
+   "hero": "李白",
+   "tier": "T2",
+   "ban": 0,
+   "pick": 1,
+   "win": 1,
+   "pickRate": 0.1,
+   "banRate": 0,
+   "winRate": 100
+  },
+  {
+   "hero": "貂蝉",
+   "tier": "T1",
+   "ban": 0,
+   "pick": 1,
+   "win": 0,
+   "pickRate": 0.1,
+   "banRate": 0,
+   "winRate": 0
+  },
+  {
+   "hero": "程咬金",
+   "tier": "T4",
+   "ban": 0,
+   "pick": 1,
+   "win": 0,
+   "pickRate": 0.1,
+   "banRate": 0,
+   "winRate": 0
+  },
+  {
+   "hero": "明世隐",
+   "tier": "T4",
+   "ban": 0,
+   "pick": 1,
+   "win": 0,
+   "pickRate": 0.1,
+   "banRate": 0,
+   "winRate": 0
+  },
+  {
+   "hero": "刘备",
+   "tier": "T3",
+   "ban": 1,
+   "pick": 0,
+   "win": 0,
+   "pickRate": 0,
+   "banRate": 0.1,
+   "winRate": null
+  },
+  {
+   "hero": "刘禅",
+   "tier": "T2",
+   "ban": 0,
+   "pick": 1,
+   "win": 0,
+   "pickRate": 0.1,
+   "banRate": 0,
+   "winRate": 0
+  }
+ ],
+ "tiers": [
+  {
+   "tier": "T0",
+   "pick": 2504,
+   "win": 1271,
+   "heroes": 11,
+   "winRate": 50.8,
+   "pickShare": 94.6
+  },
+  {
+   "tier": "T0.5",
+   "pick": 1392,
+   "win": 718,
+   "heroes": 7,
+   "winRate": 51.6,
+   "pickShare": 52.6
+  },
+  {
+   "tier": "T1",
+   "pick": 6531,
+   "win": 3253,
+   "heroes": 39,
+   "winRate": 49.8,
+   "pickShare": 246.8
+  },
+  {
+   "tier": "T2",
+   "pick": 2146,
+   "win": 1045,
+   "heroes": 37,
+   "winRate": 48.7,
+   "pickShare": 81.1
+  },
+  {
+   "tier": "T3",
+   "pick": 496,
+   "win": 243,
+   "heroes": 10,
+   "winRate": 49,
+   "pickShare": 18.7
+  },
+  {
+   "tier": "T4",
+   "pick": 124,
+   "win": 62,
+   "heroes": 6,
+   "winRate": 50,
+   "pickShare": 4.7
+  }
+ ],
+ "comps": [
+  {
+   "id": "duoliyashua-shuanda",
+   "name": "朵莉亚刷大·双边体系",
+   "priority": "A",
+   "size": 5,
+   "appearances": 144,
+   "completed": 0,
+   "winRate": 45.8,
+   "loose": {
+    "appearances": 902,
+    "winRate": 51
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "zhenxiang",
+   "name": "真香（孙尚香 + 太乙真人）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 93,
+   "completed": 93,
+   "winRate": 46.2,
+   "loose": {
+    "appearances": 93,
+    "winRate": 46.2
+   },
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "xiaoqiao-zhongkui",
+   "name": "小乔钟馗",
+   "priority": "S",
+   "size": 2,
+   "appearances": 87,
+   "completed": 87,
+   "winRate": 56.3,
+   "loose": {
+    "appearances": 107,
+    "winRate": 56.1
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "kpl-jingdian-junheng",
+   "name": "KPL 经典均衡（廉颇+镜+不知火舞+公孙离+大乔）",
+   "priority": "B",
+   "size": 5,
+   "appearances": 61,
+   "completed": 0,
+   "winRate": 50.8,
+   "loose": {
+    "appearances": 61,
+    "winRate": 50.8
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "yuanli",
+   "name": "缘离（公孙离 + 少司缘）",
+   "priority": "B",
+   "size": 2,
+   "appearances": 59,
+   "completed": 59,
+   "winRate": 47.5,
+   "loose": {
+    "appearances": 61,
+    "winRate": 45.9
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "yuandi",
+   "name": "元狄（狄仁杰 + 元流之子辅助）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 41,
+   "completed": 41,
+   "winRate": 41.5,
+   "loose": {
+    "appearances": 41,
+    "winRate": 41.5
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "shuangtan-busiliu",
+   "name": "双坦不死流",
+   "priority": "B",
+   "size": 5,
+   "appearances": 40,
+   "completed": 0,
+   "winRate": 35,
+   "loose": {
+    "appearances": 100,
+    "winRate": 39
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "kuaigong-lache",
+   "name": "快攻拉扯流",
+   "priority": "B",
+   "size": 5,
+   "appearances": 35,
+   "completed": 0,
+   "winRate": 51.4,
+   "loose": {
+    "appearances": 35,
+    "winRate": 51.4
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "daoqiangpao",
+   "name": "刀枪炮",
+   "priority": "S",
+   "size": 4,
+   "appearances": 31,
+   "completed": 0,
+   "winRate": 38.7,
+   "loose": {
+    "appearances": 32,
+    "winRate": 40.6
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "daixian-tuanzhan",
+   "name": "带线团战结合（边路牵制流）",
+   "priority": "B",
+   "size": 5,
+   "appearances": 23,
+   "completed": 0,
+   "winRate": 34.8,
+   "loose": {
+    "appearances": 23,
+    "winRate": 34.8
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "anqila-tuijin",
+   "name": "安琪拉推进队（S45）",
+   "priority": "B",
+   "size": 5,
+   "appearances": 21,
+   "completed": 0,
+   "winRate": 33.3,
+   "loose": {
+    "appearances": 21,
+    "winRate": 33.3
+   },
+   "confidence": "low",
+   "note": ""
+  },
+  {
+   "id": "luban-fuzi",
+   "name": "鲁班父子（鲁班大师 + 鲁班七号）",
+   "priority": "B",
+   "size": 2,
+   "appearances": 16,
+   "completed": 16,
+   "winRate": 50,
+   "loose": {
+    "appearances": 16,
+    "winRate": 50
+   },
+   "confidence": "low",
+   "note": ""
+  },
+  {
+   "id": "machao-aguduo-sunbin-zhouyu",
+   "name": "马超 + 阿古朵 + 孙膑 + 周瑜（KPL 联动）",
+   "priority": "B",
+   "size": 4,
+   "appearances": 10,
+   "completed": 0,
+   "winRate": 30,
+   "loose": {
+    "appearances": 10,
+    "winRate": 30
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "machao-aguduo",
+   "name": "马超 + 阿古朵",
+   "priority": "B",
+   "size": 2,
+   "appearances": 9,
+   "completed": 9,
+   "winRate": 33.3,
+   "loose": {
+    "appearances": 9,
+    "winRate": 33.3
+   },
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "qiaofu",
+   "name": "乔夫（大乔 + 老夫子）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 8,
+   "completed": 8,
+   "winRate": 62.5,
+   "loose": {
+    "appearances": 8,
+    "winRate": 62.5
+   },
+   "confidence": "low",
+   "note": ""
+  },
+  {
+   "id": "dayu-xiaohao",
+   "name": "大禹手长消耗队（S45）",
+   "priority": "B",
+   "size": 5,
+   "appearances": 7,
+   "completed": 0,
+   "winRate": 14.3,
+   "loose": {
+    "appearances": 7,
+    "winRate": 14.3
+   },
+   "confidence": "low",
+   "note": ""
+  },
+  {
+   "id": "dangong",
+   "name": "弹弓（姜子牙 + 鲁班大师）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 6,
+   "completed": 6,
+   "winRate": 66.7,
+   "loose": {
+    "appearances": 6,
+    "winRate": 66.7
+   },
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "jiangwang-boshi",
+   "name": "僵王博士（鲁班七号 + 盾山）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 5,
+   "completed": 5,
+   "winRate": 60,
+   "loose": {
+    "appearances": 5,
+    "winRate": 60
+   },
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "moshouchenggui",
+   "name": "墨守成规（百里守约 + 墨子）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 5,
+   "completed": 5,
+   "winRate": 40,
+   "loose": {
+    "appearances": 5,
+    "winRate": 40
+   },
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "sunbaiyang",
+   "name": "孙白杨（孙膑 + 白起 + 杨玉环）",
+   "priority": "B",
+   "size": 3,
+   "appearances": 5,
+   "completed": 0,
+   "winRate": 20,
+   "loose": {
+    "appearances": 5,
+    "winRate": 20
+   },
+   "confidence": "low",
+   "note": ""
+  },
+  {
+   "id": "duoliyashua-laisiao",
+   "name": "朵莉亚 + 莱西奥（超长浮空）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 4,
+   "completed": 4,
+   "winRate": 50,
+   "loose": {
+    "appearances": 4,
+    "winRate": 50
+   },
+   "confidence": "medium",
+   "note": "样本不足，勿下结论"
+  },
+  {
+   "id": "baiqi-yingzheng",
+   "name": "白起 + 嬴政（嘲讽保输出）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 4,
+   "completed": 4,
+   "winRate": 50,
+   "loose": {
+    "appearances": 4,
+    "winRate": 50
+   },
+   "confidence": "medium",
+   "note": "样本不足，勿下结论"
+  },
+  {
+   "id": "qiaoli",
+   "name": "乔离（公孙离 + 大乔）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 3,
+   "completed": 3,
+   "winRate": 33.3,
+   "loose": {
+    "appearances": 3,
+    "winRate": 33.3
+   },
+   "confidence": "high",
+   "note": "样本不足，勿下结论"
+  },
+  {
+   "id": "yidong-paotai",
+   "name": "移动炮台（鲁班大师 + 黄忠）",
+   "priority": "B",
+   "size": 2,
+   "appearances": 3,
+   "completed": 3,
+   "winRate": 33.3,
+   "loose": {
+    "appearances": 3,
+    "winRate": 33.3
+   },
+   "confidence": "medium",
+   "note": "样本不足，勿下结论"
+  },
+  {
+   "id": "yangzhuliu",
+   "name": "养猪流（四保一）",
+   "priority": "S",
+   "size": 4,
+   "appearances": 2,
+   "completed": 0,
+   "winRate": 100,
+   "loose": {
+    "appearances": 17,
+    "winRate": 47.1
+   },
+   "confidence": "medium",
+   "note": "样本不足，勿下结论"
+  },
+  {
+   "id": "nailong",
+   "name": "奶龙（桑启 + 敖隐）",
+   "priority": "A",
+   "size": 2,
+   "appearances": 2,
+   "completed": 2,
+   "winRate": 0,
+   "loose": {
+    "appearances": 17,
+    "winRate": 29.4
+   },
+   "confidence": "medium",
+   "note": "样本不足，勿下结论"
+  }
+ ]
+}

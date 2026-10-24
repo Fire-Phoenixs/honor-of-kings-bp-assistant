@@ -1,0 +1,18 @@
+# 运行期存档：本地真实英雄池 / 历史记录，不进仓库（首次运行由 data/store.sample.json 或服务端默认值生成）
+data/store.json
+data/store.json.bak
+data/*.local.json
+
+# 测试与临时产物
+.e2e/
+.tmp/
+.trash/
+node_modules/
+*.log
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.build/
